@@ -7,15 +7,26 @@ export const Route = createLazyFileRoute('/')({
 })
 
 function Index() {
-  const chartData = data.map((entry) => ({
-    year: entry.Year,
-    totalScore: entry.Data.Scores.Total
-  }))
+  // const chartData = data.map((entry) => ({
+  //   year: entry.Year,
+  //   totalScore: entry.Data.Scores.Total
+  // }))
+
+  const aggregatedData = Object.values(
+    data.reduce((accumulated, entry) => {
+      const year = entry.Year;
+      if (!accumulated[year]) {
+        accumulated[year] = { year, totalScore: 0 }
+      }
+      accumulated[year].totalScore += entry.Data.Scores.Total;
+      return accumulated;
+    }, {} as Record<number, { year: number; totalScore: number }>)
+  )
 
   return (
     <div className="p-2">
       <ResponsiveContainer width={1000} height={500}>
-        <LineChart data={chartData}>
+        <LineChart data={aggregatedData}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis />
