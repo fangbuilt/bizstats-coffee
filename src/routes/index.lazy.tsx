@@ -14,12 +14,24 @@ export const Route = createLazyFileRoute('/')({
 function Index() {
   const [mode, setMode] = useState<'total' | 'categories'>('total');
 
+  const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
+
   function toggleMode() {
     setMode(previousState => (previousState === 'total' ? 'categories' : 'total'));
   }
 
+  const allCountries = Array.from(
+    new Set(data.map(entry => entry.Location.Country))
+  ).sort();
+
+  const filteredData = data.filter(entry => {
+    if (selectedCountry && entry.Location.Country !== selectedCountry) return false;
+
+    return true;
+  });
+
   const averagedScoreData = Object.values(
-    data.reduce((accumulated, entry) => {
+    filteredData.reduce((accumulated, entry) => {
       const year = entry.Year;
       if (!accumulated[year]) {
         accumulated[year] = {
@@ -82,11 +94,20 @@ function Index() {
   return (
     <div className="p-2 flex flex-col gap-4 justify-center items-center h-dvh">
       <div className='flex flex-col gap-4 w-[1000px]'>
-        <div className="flex justify-between items-center">
-          <div className='w-xl p-4 rounded shadow max-w-prose'>
-            <p>Summary of aroma, flavor, aftertaste, acidity, body, balance, uniformity, sweetness, and moisture data averaged from aggregated countries through the years of 2010 - 2018</p>
+        <div className="flex gap-2 items-center">
+          <div className="flex items-center gap-4 p-4 rounded shadow">
+            <p>Now showing: {mode !== 'total' ? 'Categories' : 'Total'}</p>
+            <button className='w-fit whitespace-nowrap' onClick={toggleMode}>{mode === 'total' ? 'Show Categories' : 'Show Total Score'}</button>
           </div>
-          <button className='w-fit whitespace-nowrap' onClick={toggleMode}>{mode === 'total' ? 'Show Categories' : 'Show Total Score'}</button>
+          <div className='flex items-center gap-4 p-4 rounded shadow'>
+            <label htmlFor='country'>Filter by Country:</label>
+            <select id='country' value={selectedCountry ?? ''} onChange={event => setSelectedCountry(event.target.value || null)}>
+              <option value="">All Countries</option>
+              {allCountries.map(country => (
+                <option key={country} value={country}>{country}</option>
+              ))}
+            </select>
+          </div>
         </div>
         <ResponsiveContainer width="100%" height={500} className="rounded shadow p-4">
           <BarChart data={averagedScoreData}>
@@ -99,6 +120,9 @@ function Index() {
             ))}
           </BarChart>
         </ResponsiveContainer>
+        <div className='p-4 rounded shadow w-full'>
+          <p>Summary of aroma, flavor, aftertaste, acidity, body, balance, uniformity, sweetness, and moisture data averaged from aggregated countries through the years of 2010 - 2018</p>
+        </div>
       </div>
     </div>
   )

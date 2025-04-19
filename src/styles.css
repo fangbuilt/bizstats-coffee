@@ -47,7 +47,7 @@
     @apply text-lg;
   }
 
-  button {
+  button, select {
     @apply cursor-pointer rounded-lg border border-transparent bg-gray-100 text-gray-900 px-5 py-3 font-medium transition-colors hover:border-gray-200 active:bg-gray-200/80;
     /* @apply dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-700 dark:active:bg-neutral-700; */
   }
