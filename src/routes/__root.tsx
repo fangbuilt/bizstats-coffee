@@ -16,20 +16,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootComponent() {
   return (
-    <>
-      <div className="p-2 flex gap-2">
+    <div className='w-dvw h-dvh'>
+      <div className="p-2 flex gap-2 sticky top-0 z-50 shadow justify-center">
         <Link to="/">
-          Home
-        </Link>{' '}
-        <Link to="/about">
-          About
+          Total Score
+        </Link>
+        <Link to="/scores">
+          Scores
         </Link>
       </div>
-      <hr />
       <Outlet />
       <TanStackRouterDevtools />
       <ReactQueryDevtools />
-    </>
+    </div>
   )
 }
 
