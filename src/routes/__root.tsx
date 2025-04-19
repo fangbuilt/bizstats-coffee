@@ -17,12 +17,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function RootComponent() {
   return (
     <div className='w-dvw h-dvh'>
-      <div className="p-2 flex gap-2 sticky top-0 z-50 shadow justify-center">
+      <div className="px-4 py-6 flex gap-2 sticky top-0 z-50 shadow justify-center">
         <Link to="/">
-          Total Score
+          Dashboard
         </Link>
-        <Link to="/scores">
-          Scores
+        <Link to="/cards">
+          Cards
         </Link>
       </div>
       <Outlet />

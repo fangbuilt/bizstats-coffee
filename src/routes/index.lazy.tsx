@@ -13,8 +13,8 @@ export const Route = createLazyFileRoute('/')({
 
 function Index() {
   const [mode, setMode] = useState<'total' | 'categories'>('total');
-
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
+  const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 
   function toggleMode() {
     setMode(previousState => (previousState === 'total' ? 'categories' : 'total'));
@@ -24,9 +24,13 @@ function Index() {
     new Set(data.map(entry => entry.Location.Country))
   ).sort();
 
+  const allRegions = Array.from(
+    new Set(data.map(entry => entry.Location.Region))
+  ).sort();
+
   const filteredData = data.filter(entry => {
     if (selectedCountry && entry.Location.Country !== selectedCountry) return false;
-
+    if (selectedRegion && entry.Location.Region !== selectedRegion) return false;
     return true;
   });
 
@@ -101,13 +105,24 @@ function Index() {
           </div>
           <div className='flex items-center gap-4 p-4 rounded shadow'>
             <label htmlFor='country'>Filter by Country:</label>
-            <select id='country' value={selectedCountry ?? ''} onChange={event => setSelectedCountry(event.target.value || null)}>
+            <select name='country' id='country' value={selectedCountry ?? ''} onChange={(event) => {setSelectedCountry(event.target.value || null); setSelectedRegion(null);}}>
               <option value="">All Countries</option>
               {allCountries.map(country => (
                 <option key={country} value={country}>{country}</option>
               ))}
             </select>
           </div>
+          {selectedCountry && allRegions.length > 0 && (
+            <div className="flex items-center gap-4 p-4 rounded shadow">
+              <label htmlFor="region">Filter by Region:</label>
+              <select name="region" id="region" value={selectedRegion ?? ''} onChange={event => setSelectedRegion(event.target.value || null)}>
+                <option value="">All regions</option>
+                {allRegions.map(region => (
+                  <option key={region} value={region}></option>
+                ))}
+              </select>
+            </div>
+          )}
         </div>
         <ResponsiveContainer width="100%" height={500} className="rounded shadow p-4">
           <BarChart data={averagedScoreData}>
