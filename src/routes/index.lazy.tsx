@@ -175,12 +175,12 @@ function Index() {
   )
     .map(averaged => ({
       country: averaged.country,
-      rankByValue:
+      Value:
         rankBy === 'Total'
           ? twoDigitDecimals(averaged.totalScore / averaged.count)
           : twoDigitDecimals(averaged[rankBy] / averaged.count)
     }))
-    .sort((a, b) => b.rankByValue - a.rankByValue)
+    .sort((a, b) => b.Value - a.Value)
     .slice(0, 10)
     .map((sorted, index) => ({ ...sorted, rank: index + 1 }));
 
@@ -332,7 +332,7 @@ function Index() {
               }}
             />
             <Tooltip />
-            <Bar dataKey="rankByValue" fill="hsl(220, 80%, 60%)" radius={[4, 4, 0, 0]} barSize={10} />
+            <Bar dataKey="Value" fill="hsl(220, 80%, 60%)" radius={[4, 4, 0, 0]} barSize={10} />
           </BarChart>
         </ResponsiveContainer>
       </div>
