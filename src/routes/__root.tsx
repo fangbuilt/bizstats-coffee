@@ -17,7 +17,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function RootComponent() {
   return (
     <div className='w-dvw h-dvh'>
-      <div className="px-4 py-6 flex gap-2 sticky top-0 z-50 shadow justify-center">
+      <div className="px-4 py-6 flex gap-2 sticky top-0 z-50 shadow justify-center bg-white">
         <Link to="/">
           Dashboard
         </Link>
