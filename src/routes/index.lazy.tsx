@@ -1,20 +1,15 @@
 import { createLazyFileRoute } from '@tanstack/react-router'
 import data from '../assets/static-coffee-data.json'
-import { 
-  Bar, 
-  BarChart, 
-  CartesianGrid, 
-  Line, 
-  LineChart, 
-  // PolarAngleAxis, 
-  // PolarGrid, 
-  // PolarRadiusAxis, 
-  // Radar, 
-  // RadarChart, 
-  ResponsiveContainer, 
-  Tooltip, 
-  XAxis, 
-  YAxis 
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis
 } from 'recharts'
 import { useState } from 'react';
 
@@ -143,13 +138,6 @@ function Index() {
 
   const barKeys = mode === 'total' ? ['Averaged Total Score'] : ['Aroma', 'Flavor', 'Aftertaste', 'Acidity', 'Body', 'Balance', 'Uniformity', 'Sweetness', 'Moisture'];
 
-  // const radarData = mode === 'categories' ? Object.entries(scoreCategories).map(([key, label]) => ({
-  //   category: label,
-  //   score: twoDigitDecimals(
-  //     averagedScoreData.reduce((sum, data) => sum + (data[label] ?? 0), 0) / averagedScoreData.length
-  //   )
-  // })) : [];
-
   const topCountriesData = Object.values(
     data.reduce((accumulated, entry) => {
       const year = entry.Year;
@@ -197,29 +185,52 @@ function Index() {
     .map((sorted, index) => ({ ...sorted, rank: index + 1 }));
 
   return (
-    <div className="p-2 flex flex-col gap-4 justify-center items-center min-h-screen mt-4">
-      <div className='flex flex-col gap-4 w-[75%]'>
-        <div className='p-4 rounded shadow w-full'>
+    <div className="p-2 sm:p-4 flex flex-col gap-6 justify-center items-center min-h-screen mt-2 sm:mt-4">
+      <div className="flex flex-col gap-4 w-full max-w-6xl">
+
+        {/* Description Box */}
+        <div className="p-4 rounded shadow w-full text-sm sm:text-base">
           <p>Summary of aroma, flavor, aftertaste, acidity, body, balance, uniformity, sweetness, and moisture data averaged from aggregated countries through the years of 2010 - 2018</p>
         </div>
-        <div className="flex gap-2 items-center">
-          <div className="flex items-center gap-4 p-4 rounded shadow">
-            <p>Now showing: {mode !== 'total' ? 'Categories' : 'Total'}</p>
-            <button className='w-fit whitespace-nowrap' onClick={toggleMode}>{mode === 'total' ? 'Show Categories' : 'Show Total Score'}</button>
+
+        {/* Controls Row */}
+        <div className="flex flex-col sm:flex-row flex-wrap gap-2 items-stretch sm:items-center">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto">
+            <p className="text-sm sm:text-base">Now showing: {mode !== 'total' ? 'Categories' : 'Total'}</p>
+            <button className="text-sm sm:text-base w-full sm:w-fit whitespace-nowrap" onClick={toggleMode}>
+              {mode === 'total' ? 'Show Categories' : 'Show Total Score'}
+            </button>
           </div>
-          <div className='flex items-center gap-4 p-4 rounded shadow'>
-            <label htmlFor='country'>Filter by Country:</label>
-            <select name='country' id='country' value={selectedCountry ?? ''} onChange={(event) => { setSelectedCountry(event.target.value || null); setSelectedRegion(null); }}>
+
+          {/* Country Select */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto">
+            <label htmlFor="country">Filter by Country:</label>
+            <select
+              name="country"
+              id="country"
+              value={selectedCountry ?? ''}
+              onChange={(event) => {
+                setSelectedCountry(event.target.value || null);
+                setSelectedRegion(null);
+              }}
+            >
               <option value="">All Countries</option>
               {allCountries.map(country => (
                 <option key={country} value={country}>{country}</option>
               ))}
             </select>
           </div>
+
+          {/* Region Select (Conditional) */}
           {selectedCountry && allRegions.length > 0 && (
-            <div className="flex items-center gap-4 p-4 rounded shadow">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto">
               <label htmlFor="region">Filter by Region:</label>
-              <select name="region" id="region" value={selectedRegion ?? ''} onChange={event => setSelectedRegion(event.target.value || null)}>
+              <select
+                name="region"
+                id="region"
+                value={selectedRegion ?? ''}
+                onChange={event => setSelectedRegion(event.target.value || null)}
+              >
                 <option value="">All Regions</option>
                 {allRegions.map(region => (
                   <option key={region} value={region}>{toTitleCase(region)}</option>
@@ -228,6 +239,8 @@ function Index() {
             </div>
           )}
         </div>
+
+        {/* Chart */}
         <ResponsiveContainer width="100%" height={500} className="rounded shadow p-4">
           {chartType === 'line' ? (
             <LineChart data={averagedScoreData}>
@@ -254,29 +267,48 @@ function Index() {
               <YAxis />
               <Tooltip />
               {barKeys.map((key, index) => (
-                <Bar key={key} dataKey={key} fill={`hsl(${(index * 35) % 360}, 70%, 60%)`} radius={[4, 4, 0, 0]} />
+                <Bar
+                  key={key}
+                  dataKey={key}
+                  fill={`hsl(${(index * 35) % 360}, 70%, 60%)`}
+                  radius={[4, 4, 0, 0]}
+                />
               ))}
             </BarChart>
           )}
         </ResponsiveContainer>
       </div>
 
-      <div className="flex flex-col gap-4 w-[75%]">
-        <div className='p-4 rounded shadow w-full'>
+      {/* Rankings */}
+      <div className="flex flex-col gap-4 w-full max-w-6xl">
+        <div className="p-4 rounded shadow w-full text-sm sm:text-base">
           <h1>{rankBy === 'Total' ? 'Total Score Ranking' : rankBy + ' Ranking'}</h1>
         </div>
-        <div className="flex gap-2 items-center">
-          <div className="flex items-center gap-4 p-4 shadow rounded">
+
+        {/* Year & RankBy Controls */}
+        <div className="flex flex-col sm:flex-row flex-wrap gap-2 items-stretch sm:items-center">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 shadow rounded w-full sm:w-auto">
             <label htmlFor="year">Filter by Year:</label>
-            <select name="year" id="year" value={selectedYear} onChange={event => setSelectedYear(event.target.value === 'all' ? 'all' : Number(event.target.value))}>
+            <select
+              name="year"
+              id="year"
+              value={selectedYear}
+              onChange={event => setSelectedYear(event.target.value === 'all' ? 'all' : Number(event.target.value))}
+            >
               <option value="all">All Years (2010 - 2018)</option>
               {allYears.map(year => (
                 <option key={year} value={year}>{year}</option>
               ))}
             </select>
           </div>
-          <div className="flex items-center gap-4 p-4 shadow rounded">
-            <select name="rankBy" id="rankBy" onChange={event => setRankBy(event.target.value as any)} value={rankBy}>
+
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 shadow rounded w-full sm:w-auto">
+            <select
+              name="rankBy"
+              id="rankBy"
+              onChange={event => setRankBy(event.target.value as any)}
+              value={rankBy}
+            >
               <option value="Total">Total Score</option>
               {Object.keys(scoreCategories).map(key => (
                 <option key={key} value={key}>{key}</option>
@@ -284,21 +316,27 @@ function Index() {
             </select>
           </div>
         </div>
+
+        {/* Rankings Chart */}
         <ResponsiveContainer width="100%" height={topCountriesData.length * 80} className="rounded shadow p-4">
-          <BarChart data={topCountriesData} layout='vertical'>
+          <BarChart data={topCountriesData} layout="vertical">
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis type='number' />
-            <YAxis dataKey="Country" type='category' tickFormatter={(_, index) => {
-              const rank = topCountriesData[index]?.rank;
-              const countryName = topCountriesData[index]?.country
-              return `#${rank} ${countryName}`;
-            }} />
+            <XAxis type="number" />
+            <YAxis
+              dataKey="Country"
+              type="category"
+              tickFormatter={(_, index) => {
+                const rank = topCountriesData[index]?.rank;
+                const countryName = topCountriesData[index]?.country;
+                return `#${rank} ${countryName}`;
+              }}
+            />
             <Tooltip />
             <Bar dataKey="rankByValue" fill="hsl(220, 80%, 60%)" radius={[4, 4, 0, 0]} barSize={10} />
           </BarChart>
         </ResponsiveContainer>
-
       </div>
     </div>
+
   )
 }
