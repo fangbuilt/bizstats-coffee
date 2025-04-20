@@ -190,7 +190,7 @@ function Index() {
 
         {/* Description Box */}
         <div className="p-4 rounded shadow w-full text-sm sm:text-base">
-          <p>Summary of aroma, flavor, aftertaste, acidity, body, balance, uniformity, sweetness, and moisture data averaged from aggregated countries through the years of 2010 - 2018</p>
+          <h3>Average of Coffee Characteristics Score</h3>
         </div>
 
         {/* Controls Row */}
@@ -282,7 +282,7 @@ function Index() {
       {/* Rankings */}
       <div className="flex flex-col gap-4 w-full max-w-6xl">
         <div className="p-4 rounded shadow w-full text-sm sm:text-base">
-          <h1>{rankBy === 'Total' ? 'Total Score Ranking' : rankBy + ' Ranking'}</h1>
+          <h3>{rankBy === 'Total' ? 'Total Score Ranking' : rankBy + ' Ranking'}</h3>
         </div>
 
         {/* Year & RankBy Controls */}
