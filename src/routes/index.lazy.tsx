@@ -1,6 +1,21 @@
 import { createLazyFileRoute } from '@tanstack/react-router'
 import data from '../assets/static-coffee-data.json'
-import { Bar, BarChart, CartesianGrid, Line, LineChart, PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { 
+  Bar, 
+  BarChart, 
+  CartesianGrid, 
+  Line, 
+  LineChart, 
+  // PolarAngleAxis, 
+  // PolarGrid, 
+  // PolarRadiusAxis, 
+  // Radar, 
+  // RadarChart, 
+  ResponsiveContainer, 
+  Tooltip, 
+  XAxis, 
+  YAxis 
+} from 'recharts'
 import { useState } from 'react';
 
 function twoDigitDecimals(number: number) {
