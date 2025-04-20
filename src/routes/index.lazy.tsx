@@ -184,6 +184,9 @@ function Index() {
   return (
     <div className="p-2 flex flex-col gap-4 justify-center items-center min-h-screen mt-4">
       <div className='flex flex-col gap-4 w-[75%]'>
+        <div className='p-4 rounded shadow w-full'>
+          <p>Summary of aroma, flavor, aftertaste, acidity, body, balance, uniformity, sweetness, and moisture data averaged from aggregated countries through the years of 2010 - 2018</p>
+        </div>
         <div className="flex gap-2 items-center">
           <div className="flex items-center gap-4 p-4 rounded shadow">
             <p>Now showing: {mode !== 'total' ? 'Categories' : 'Total'}</p>
@@ -241,12 +244,12 @@ function Index() {
             </BarChart>
           )}
         </ResponsiveContainer>
-        <div className='p-4 rounded shadow w-full'>
-          <p>Summary of aroma, flavor, aftertaste, acidity, body, balance, uniformity, sweetness, and moisture data averaged from aggregated countries through the years of 2010 - 2018</p>
-        </div>
       </div>
 
       <div className="flex flex-col gap-4 w-[75%]">
+        <div className='p-4 rounded shadow w-full'>
+          <h1>{rankBy === 'Total' ? 'Total Score Ranking' : rankBy + ' Ranking'}</h1>
+        </div>
         <div className="flex gap-2 items-center">
           <div className="flex items-center gap-4 p-4 shadow rounded">
             <label htmlFor="year">Filter by Year:</label>
