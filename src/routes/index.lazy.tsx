@@ -1,6 +1,6 @@
 import { createLazyFileRoute } from '@tanstack/react-router'
 import data from '../assets/static-coffee-data.json'
-import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { Bar, BarChart, CartesianGrid, Line, LineChart, PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { useState } from 'react';
 
 function twoDigitDecimals(number: number) {
@@ -30,6 +30,7 @@ export const Route = createLazyFileRoute('/')({
 
 function Index() {
   const [mode, setMode] = useState<'total' | 'categories'>('total');
+  const chartType = mode === 'total' ? 'line' : 'bar';
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
@@ -63,7 +64,6 @@ function Index() {
   const filteredData = data.filter(entry => {
     if (selectedCountry && entry.Location.Country !== selectedCountry) return false;
     if (selectedRegion && entry.Location.Region !== selectedRegion) return false;
-    // if (selectedYear && entry.Year !== selectedYear) return false;
     return true;
   });
 
@@ -128,6 +128,13 @@ function Index() {
 
   const barKeys = mode === 'total' ? ['Averaged Total Score'] : ['Aroma', 'Flavor', 'Aftertaste', 'Acidity', 'Body', 'Balance', 'Uniformity', 'Sweetness', 'Moisture'];
 
+  // const radarData = mode === 'categories' ? Object.entries(scoreCategories).map(([key, label]) => ({
+  //   category: label,
+  //   score: twoDigitDecimals(
+  //     averagedScoreData.reduce((sum, data) => sum + (data[label] ?? 0), 0) / averagedScoreData.length
+  //   )
+  // })) : [];
+
   const topCountriesData = Object.values(
     data.reduce((accumulated, entry) => {
       const year = entry.Year;
@@ -156,10 +163,10 @@ function Index() {
 
       return accumulated;
     }, {} as Record<
-      string, { 
-        country: string, 
-        totalScore: number, 
-        count: number 
+      string, {
+        country: string,
+        totalScore: number,
+        count: number
       } & Record<keyof typeof scoreCategories, number>
     >)
   )
@@ -204,15 +211,35 @@ function Index() {
           )}
         </div>
         <ResponsiveContainer width="100%" height={500} className="rounded shadow p-4">
-          <BarChart data={averagedScoreData}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="Year" />
-            <YAxis />
-            <Tooltip />
-            {barKeys.map((key, index) => (
-              <Bar key={key} dataKey={key} fill={`hsl(${(index * 35) % 360}, 70%, 60%)`} radius={[4, 4, 0, 0]} />
-            ))}
-          </BarChart>
+          {chartType === 'line' ? (
+            <LineChart data={averagedScoreData}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="Year" />
+              <YAxis />
+              <Tooltip />
+              {barKeys.map((key, index) => (
+                <Line
+                  key={key}
+                  type="monotone"
+                  dataKey={key}
+                  stroke={`hsl(${(index * 35) % 360}, 70%, 60%)`}
+                  strokeWidth={2}
+                  dot={{ r: 3 }}
+                  activeDot={{ r: 5 }}
+                />
+              ))}
+            </LineChart>
+          ) : (
+            <BarChart data={averagedScoreData}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="Year" />
+              <YAxis />
+              <Tooltip />
+              {barKeys.map((key, index) => (
+                <Bar key={key} dataKey={key} fill={`hsl(${(index * 35) % 360}, 70%, 60%)`} radius={[4, 4, 0, 0]} />
+              ))}
+            </BarChart>
+          )}
         </ResponsiveContainer>
         <div className='p-4 rounded shadow w-full'>
           <p>Summary of aroma, flavor, aftertaste, acidity, body, balance, uniformity, sweetness, and moisture data averaged from aggregated countries through the years of 2010 - 2018</p>
@@ -239,7 +266,7 @@ function Index() {
             </select>
           </div>
         </div>
-        <ResponsiveContainer width="100%" height={topCountriesData.length * 64} className="rounded shadow p-4">
+        <ResponsiveContainer width="100%" height={topCountriesData.length * 80} className="rounded shadow p-4">
           <BarChart data={topCountriesData} layout='vertical'>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis type='number' />

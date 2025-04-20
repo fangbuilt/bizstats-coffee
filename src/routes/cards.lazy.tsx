@@ -6,8 +6,8 @@ export const Route = createLazyFileRoute('/cards')({
 
 function Cards() {
   return (
-    <div className="p-2">
-      <p>Hello from cards!</p>
+    <div className="p-2 flex flex-col justify-center items-center min-h-screen">
+      <p>Interactive cards coming soon!</p>
     </div>
   )
 }
