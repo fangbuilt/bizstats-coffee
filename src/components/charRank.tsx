@@ -1,0 +1,119 @@
+import { useState } from "react";
+import { CorgisCoffee, scoreCategories, twoDigitDecimals } from "../utils";
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+
+export default function CharRank({ data }: { data: CorgisCoffee[]}) {
+    const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
+    const [rankBy, setRankBy] = useState<'Total' | keyof typeof scoreCategories>('Total');
+
+    const allYears = Array.from(
+        new Set(
+            data.map(entry => entry.Year)
+        )
+    ).sort();
+
+    const topCountriesData = Object.values(
+        data.reduce((accumulated, entry) => {
+            const year = entry.Year;
+            if (selectedYear !== 'all' && year !== selectedYear) return accumulated;
+
+            const country = entry.Location.Country;
+
+            if (!accumulated[country]) {
+                accumulated[country] = {
+                    country,
+                    totalScore: 0,
+                    count: 0,
+                    ...Object.keys(scoreCategories).reduce((accumulatedCategories, key) => {
+                        accumulatedCategories[key as keyof typeof scoreCategories] = 0;
+                        return accumulatedCategories;
+                    }, {} as Record<keyof typeof scoreCategories, number>)
+                }
+            }
+
+            accumulated[country].totalScore += entry.Data.Scores.Total;
+            accumulated[country].count += 1;
+
+            for (const key of Object.keys(scoreCategories) as (keyof typeof scoreCategories)[]) {
+                accumulated[country][key] += entry.Data.Scores[key];
+            }
+
+            return accumulated;
+        }, {} as Record<
+            string, {
+                country: string,
+                totalScore: number,
+                count: number
+            } & Record<keyof typeof scoreCategories, number>
+        >)
+    )
+        .map(averaged => ({
+            country: averaged.country,
+            Value:
+                rankBy === 'Total'
+                    ? twoDigitDecimals(averaged.totalScore / averaged.count)
+                    : twoDigitDecimals(averaged[rankBy] / averaged.count)
+        }))
+        .sort((a, b) => b.Value - a.Value)
+        .slice(0, 10)
+        .map((sorted, index) => ({ ...sorted, rank: index + 1 }));
+    return (
+        <div className="flex flex-col gap-4 w-full max-w-6xl" >
+            <div className="p-4 rounded shadow w-full text-sm sm:text-base">
+                <h3>{rankBy === 'Total' ? 'Total Score Ranking' : rankBy + ' Ranking'}</h3>
+            </div>
+
+            <div className="flex flex-col sm:flex-row flex-wrap gap-2 items-stretch sm:items-center">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 shadow rounded w-full sm:w-auto">
+                    <label htmlFor="year">Filter by Year:</label>
+                    <select
+                        name="year"
+                        id="year"
+                        value={selectedYear}
+                        onChange={event => setSelectedYear(event.target.value === 'all' ? 'all' : Number(event.target.value))}
+                    >
+                        <option value="all">All Years (2010 - 2018)</option>
+                        {allYears.map(year => (
+                            <option key={year} value={year}>{year}</option>
+                        ))}
+                    </select>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 shadow rounded w-full sm:w-auto">
+                    <select
+                        name="rankBy"
+                        id="rankBy"
+                        onChange={event => setRankBy(event.target.value as any)}
+                        value={rankBy}
+                    >
+                        <option value="Total">Total Score</option>
+                        {Object.keys(scoreCategories).map(key => (
+                            <option key={key} value={key}>{key}</option>
+                        ))}
+                    </select>
+                </div>
+            </div>
+
+            {/* Rankings Chart */}
+            <ResponsiveContainer width="100%" height={topCountriesData.length * 80} className="rounded shadow p-4">
+                <BarChart data={topCountriesData} layout="vertical">
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis type="number" />
+                    <YAxis
+                        dataKey="Country"
+                        type="category"
+                        tickFormatter={(_, index) => {
+                            const rank = topCountriesData[index]?.rank;
+                            const countryName = topCountriesData[index]?.country;
+                            return `#${rank} ${countryName}`;
+                        }}
+                    />
+                    <Tooltip />
+                    <Bar dataKey="Value" fill="hsl(220, 80%, 60%)" radius={[4, 4, 0, 0]} barSize={10} />
+                </BarChart>
+            </ResponsiveContainer>
+
+        </div >
+
+    )
+}
