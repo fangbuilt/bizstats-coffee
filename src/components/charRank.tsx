@@ -70,6 +70,7 @@ export default function CharRank({ data }: { data: CorgisCoffee[] }) {
                         name="year"
                         id="year"
                         value={selectedYear}
+                        className="w-full sm:w-auto border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         onChange={event => setSelectedYear(event.target.value === 'all' ? 'all' : Number(event.target.value))}
                     >
                         <option value="all">All Years (2010 - 2018)</option>
@@ -84,6 +85,7 @@ export default function CharRank({ data }: { data: CorgisCoffee[] }) {
                         name="rankBy"
                         id="rankBy"
                         onChange={event => setRankBy(event.target.value as any)}
+                        className="w-full sm:w-auto border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         value={rankBy}
                     >
                         <option value="Total">Total Score</option>

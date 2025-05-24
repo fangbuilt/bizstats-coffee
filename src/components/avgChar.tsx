@@ -106,8 +106,8 @@ export default function AvgChar({ data }: { data: CorgisCoffee[]}) {
             {/* Controls Row */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-2 items-stretch sm:items-center justify-center">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto bg-white">
-                    <p className="text-sm sm:text-base">Now showing: {mode !== 'total' ? 'Categories' : 'Total'}</p>
-                    <button className="text-sm sm:text-base w-full sm:w-fit whitespace-nowrap" onClick={toggleMode}>
+                    <p>Now showing: {mode !== 'total' ? 'Categories' : 'Total'}</p>
+                    <button className="w-full sm:w-auto border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" onClick={toggleMode}>
                         {mode === 'total' ? 'Show Categories' : 'Show Total Score'}
                     </button>
                 </div>
@@ -119,6 +119,7 @@ export default function AvgChar({ data }: { data: CorgisCoffee[]}) {
                         name="country"
                         id="country"
                         value={selectedCountry ?? ''}
+                        className="w-full sm:w-auto border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         onChange={(event) => {
                             setSelectedCountry(event.target.value || null);
                             setSelectedRegion(null);
@@ -139,6 +140,7 @@ export default function AvgChar({ data }: { data: CorgisCoffee[]}) {
                             name="region"
                             id="region"
                             value={selectedRegion ?? ''}
+                            className="w-full sm:w-auto border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                             onChange={event => setSelectedRegion(event.target.value || null)}
                         >
                             <option value="">All Regions</option>
