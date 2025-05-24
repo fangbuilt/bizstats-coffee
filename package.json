@@ -32,9 +32,11 @@
     "@tanstack/react-router": "^1.97.21",
     "@tanstack/react-table": "^8.21.3",
     "@tanstack/react-virtual": "^3.13.8",
+    "fast-json-stable-stringify": "^2.1.0",
     "react": "^19",
     "react-dom": "^19",
     "recharts": "^2.15.1",
+    "simple-statistics": "^7.8.8",
     "tailwindcss": "^4.0.0"
   },
   "devDependencies": {

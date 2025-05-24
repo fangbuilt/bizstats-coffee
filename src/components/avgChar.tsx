@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { CorgisCoffee, toTitleCase, twoDigitDecimals } from "../utils";
+import { CorgisCoffee, toTitleCase } from "../utils";
 
 export default function AvgChar({ data }: { data: CorgisCoffee[]}) {
     const [mode, setMode] = useState<'total' | 'categories'>('total');
@@ -80,16 +80,16 @@ export default function AvgChar({ data }: { data: CorgisCoffee[]}) {
         }>)
     ).map(averaged => ({
         "Year": averaged.year,
-        "Averaged Total Score": twoDigitDecimals(averaged.totalScore / averaged.count),
-        "Aroma": twoDigitDecimals(averaged.aroma / averaged.count),
-        "Flavor": twoDigitDecimals(averaged.flavor / averaged.count),
-        "Aftertaste": twoDigitDecimals(averaged.aftertaste / averaged.count),
-        "Acidity": twoDigitDecimals(averaged.acidity / averaged.count),
-        "Body": twoDigitDecimals(averaged.body / averaged.count),
-        "Balance": twoDigitDecimals(averaged.balance / averaged.count),
-        "Uniformity": twoDigitDecimals(averaged.uniformity / averaged.count),
-        "Sweetness": twoDigitDecimals(averaged.sweetness / averaged.count),
-        "Moisture": twoDigitDecimals(averaged.moisture / averaged.count)
+        "Averaged Total Score": (averaged.totalScore / averaged.count).toFixed(2),
+        "Aroma": (averaged.aroma / averaged.count).toFixed(2),
+        "Flavor": (averaged.flavor / averaged.count).toFixed(2),
+        "Aftertaste": (averaged.aftertaste / averaged.count).toFixed(2),
+        "Acidity": (averaged.acidity / averaged.count).toFixed(2),
+        "Body": (averaged.body / averaged.count).toFixed(2),
+        "Balance": (averaged.balance / averaged.count).toFixed(2),
+        "Uniformity": (averaged.uniformity / averaged.count).toFixed(2),
+        "Sweetness": (averaged.sweetness / averaged.count).toFixed(2),
+        "Moisture": (averaged.moisture / averaged.count).toFixed(2)
     }));
 
     const barKeys = mode === 'total' ? ['Averaged Total Score'] : ['Aroma', 'Flavor', 'Aftertaste', 'Acidity', 'Body', 'Balance', 'Uniformity', 'Sweetness', 'Moisture'];
@@ -99,13 +99,13 @@ export default function AvgChar({ data }: { data: CorgisCoffee[]}) {
         <div className="flex flex-col gap-4 w-full max-w-6xl">
 
             {/* Description Box */}
-            <div className="p-4 rounded shadow w-full text-sm sm:text-base">
+            <div className="p-6 rounded shadow w-full text-sm sm:text-base bg-white text-center">
                 <h3>Average of Coffee Characteristics Score</h3>
             </div>
 
             {/* Controls Row */}
-            <div className="flex flex-col sm:flex-row flex-wrap gap-2 items-stretch sm:items-center">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-2 items-stretch sm:items-center justify-center">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto bg-white">
                     <p className="text-sm sm:text-base">Now showing: {mode !== 'total' ? 'Categories' : 'Total'}</p>
                     <button className="text-sm sm:text-base w-full sm:w-fit whitespace-nowrap" onClick={toggleMode}>
                         {mode === 'total' ? 'Show Categories' : 'Show Total Score'}
@@ -113,7 +113,7 @@ export default function AvgChar({ data }: { data: CorgisCoffee[]}) {
                 </div>
 
                 {/* Country Select */}
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto bg-white">
                     <label htmlFor="country">Filter by Country:</label>
                     <select
                         name="country"
@@ -133,7 +133,7 @@ export default function AvgChar({ data }: { data: CorgisCoffee[]}) {
 
                 {/* Region Select (Conditional) */}
                 {selectedCountry && allRegions.length > 0 && (
-                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 rounded shadow w-full sm:w-auto bg-white">
                         <label htmlFor="region">Filter by Region:</label>
                         <select
                             name="region"
@@ -151,7 +151,7 @@ export default function AvgChar({ data }: { data: CorgisCoffee[]}) {
             </div>
 
             {/* Chart */}
-            <ResponsiveContainer width="100%" height={500} className="rounded shadow p-4">
+            <ResponsiveContainer width="100%" height={500} className="rounded shadow p-6 bg-white">
                 {chartType === 'line' ? (
                     <LineChart data={averagedScoreData}>
                         <CartesianGrid strokeDasharray="3 3" />

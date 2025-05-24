@@ -1,96 +1,96 @@
 import { createLazyFileRoute } from '@tanstack/react-router'
-import { CorgisCoffee } from '../utils';
-import { ColumnDef, flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table';
-import { useMemo } from 'react';
+import { cleanedCoffeeData } from '../utils'
+import { sampleCorrelation, standardDeviation } from 'simple-statistics'
+import { useState } from 'react'
 
 export const Route = createLazyFileRoute('/cards')({
   component: Cards,
 })
 
-interface Row {
-  owner: string;
-  species: string;
-  variety: string;
-  method: string;
-  country: string;
+function getScoreSD(accessor: keyof typeof cleanedCoffeeData[number]['Data']['Scores']) {
+  return standardDeviation(cleanedCoffeeData.map(d => d.Data.Scores[accessor])).toFixed(2)
 }
 
-function getTypeRows(data: CorgisCoffee[], selectedYear?: number | 'all'): Row[] {
-  return data
-    .filter(d => selectedYear === 'all' || d.Year === selectedYear)
-    .map(d => ({
-      owner: d.Data.Owner,
-      species: d.Data.Type.Species,
-      variety: d.Data.Type.Variety,
-      method: d.Data.Type["Processing method"],
-      country: d.Location.Country,
-    }))
+function getScoreCorr(accessorA: keyof typeof cleanedCoffeeData[number]['Data']['Scores'], accessorB: keyof typeof cleanedCoffeeData[number]['Data']['Scores']) {
+  return sampleCorrelation(cleanedCoffeeData.map(d => d.Data.Scores[accessorA]), cleanedCoffeeData.map(d => d.Data.Scores[accessorB])).toFixed(2)
 }
 
-function getModeCounts(data: Row[]) {
-  const countMap: Record<'species' | 'variety' | 'method', Record<string, number>> = {
-    species: {},
-    variety: {},
-    method: {}
-  }
-  for (const d of data) {
-    for (const key of ['species', 'variety', 'method'] as const) {
-      const val = d[key] || 'Unknown'
-      countMap[key][val] = (countMap[key][val] ?? 0) + 1
-    }
-  }
-  return countMap
-}
+const corrAltTotal = sampleCorrelation(cleanedCoffeeData.map(d => d.Location.Altitude.Average), cleanedCoffeeData.map(d => d.Data.Scores.Total)).toFixed(2)
 
-const columns: ColumnDef<Row>[] = [
-  { accessorKey: 'owner', header: 'Owner' },
-  { accessorKey: 'species', header: 'Species' },
-  { accessorKey: 'variety', header: 'Variety' },
-  { accessorKey: 'method', header: 'Processing Method' },
-  { accessorKey: 'country', header: 'Country' },
-]
+function Cards() {
+  const [scoreSDAccessor, setScoreSDAccessor] = useState<keyof typeof cleanedCoffeeData[number]['Data']['Scores']>('Total')
+  const [scoreCorrAccessorA, setScoreCorrAccessorA] = useState<keyof typeof cleanedCoffeeData[number]['Data']['Scores']>('Total')
+  const [scoreCorrAccessorB, setScoreCorrAccessorB] = useState<keyof typeof cleanedCoffeeData[number]['Data']['Scores']>('Total')
 
-function Cards({ data, selectedYear }: { data: CorgisCoffee[], selectedYear: number | 'all' }) {
-  const rows = useMemo(() => getTypeRows(data, selectedYear), [data, selectedYear])
-  const table = useReactTable({
-    data: rows,
-    columns,
-    getCoreRowModel: getCoreRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-  })
+  const sd = getScoreSD(scoreSDAccessor)
+  const corr = getScoreCorr(scoreCorrAccessorA, scoreCorrAccessorB)
 
-  const modeCounts = getModeCounts(rows)
   return (
-    <div className="p-2 flex flex-col justify-center items-center min-h-screen">
-      <table>
-        <thead>
-          {table.getHeaderGroups().map(headerGroup => (
-            <tr key={headerGroup.id}>
-              {headerGroup.headers.map(header => (
-                <th key={header.id}>
-                  {flexRender(header.column.columnDef.header, header.getContext())}
-                </th>
-              ))}
-            </tr>
-          ))}
-        </thead>
-        <tbody>
-          {table.getRowModel().rows.map(row => (
-            <tr key={row.id}>
-              {row.getVisibleCells().map(cell => (
-                <td key={cell.id}>
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="p-2 flex flex-col justify-center items-center min-h-screen gap-6">
 
-      <div className="mt-4 text-sm">
-        <h4>🔢 Mode Stats:</h4>
-        <pre className="whitespace-pre-wrap">{JSON.stringify(modeCounts, null, 2)}</pre>
+      <div className='rounded shadow p-6 max-w-xl min-w-lg bg-white'>
+        <h2 className='text-center'>Standard Deviation</h2>
+        <hr className='my-4' />
+        <div className='flex flex-col gap-4'>
+          <h4 className='text-center'>Characteristics Score</h4>
+          <div className="flex gap-4 justify-center align-middle items-center">
+            <select
+              name="scores"
+              id="scores"
+              value={scoreSDAccessor}
+              onChange={(e) => setScoreSDAccessor(e.target.value as keyof typeof cleanedCoffeeData[number]['Data']['Scores'])}
+            >
+              {Object.keys(cleanedCoffeeData[0].Data.Scores).map((key) => (
+                <option key={key} value={key}>{key}</option>
+              ))}
+            </select>
+            <p>{sd}</p>
+          </div>
+        </div>
       </div>
+
+      <div className='rounded shadow p-6 max-w-xl min-w-lg bg-white'>
+        <h2 className='text-center'>Correlation</h2>
+        <hr className='my-4' />
+        <div className='flex flex-col gap-4'>
+          <h4 className='text-center'>Characteristics Score</h4>
+          <div className="flex gap-4 justify-center align-middle items-center">
+            <select
+              name="scores"
+              id="scores"
+              value={scoreCorrAccessorA}
+              onChange={(e) => setScoreCorrAccessorA(e.target.value as keyof typeof cleanedCoffeeData[number]['Data']['Scores'])}
+            >
+              {Object.keys(cleanedCoffeeData[0].Data.Scores).map((key) => (
+                <option key={key} value={key}>{key}</option>
+              ))}
+            </select>
+            <select
+              name="scores"
+              id="scores"
+              value={scoreCorrAccessorB}
+              onChange={(e) => setScoreCorrAccessorB(e.target.value as keyof typeof cleanedCoffeeData[number]['Data']['Scores'])}
+            >
+              {Object.keys(cleanedCoffeeData[0].Data.Scores).map((key) => (
+                <option key={key} value={key}>{key}</option>
+              ))}
+            </select>
+            <p>{corr}</p>
+          </div>
+        </div>
+      </div>
+
+      <div className='rounded shadow p-6 max-w-xl min-w-lg bg-white'>
+        <h2 className='text-center'>Correlation</h2>
+        <hr className='my-4' />
+        <div className='flex flex-col gap-4'>
+          <h4 className='text-center'>Altitude : Total Score</h4>
+          <div className="flex gap-4 justify-center align-middle items-center">
+            <p>{corrAltTotal}</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }

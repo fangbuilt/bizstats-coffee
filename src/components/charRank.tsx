@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { CorgisCoffee, scoreCategories, twoDigitDecimals } from "../utils";
+import { CorgisCoffee, scoreCategories } from "../utils";
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
-export default function CharRank({ data }: { data: CorgisCoffee[]}) {
+export default function CharRank({ data }: { data: CorgisCoffee[] }) {
     const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
     const [rankBy, setRankBy] = useState<'Total' | keyof typeof scoreCategories>('Total');
 
@@ -51,20 +51,20 @@ export default function CharRank({ data }: { data: CorgisCoffee[]}) {
             country: averaged.country,
             Value:
                 rankBy === 'Total'
-                    ? twoDigitDecimals(averaged.totalScore / averaged.count)
-                    : twoDigitDecimals(averaged[rankBy] / averaged.count)
+                    ? (averaged.totalScore / averaged.count)
+                    : (averaged[rankBy] / averaged.count)
         }))
         .sort((a, b) => b.Value - a.Value)
         .slice(0, 10)
         .map((sorted, index) => ({ ...sorted, rank: index + 1 }));
     return (
-        <div className="flex flex-col gap-4 w-full max-w-6xl" >
-            <div className="p-4 rounded shadow w-full text-sm sm:text-base">
+        <div className="flex flex-col gap-6 w-full max-w-6xl" >
+            <div className="p-6 rounded shadow w-full text-sm sm:text-base bg-white text-center">
                 <h3>{rankBy === 'Total' ? 'Total Score Ranking' : rankBy + ' Ranking'}</h3>
             </div>
 
-            <div className="flex flex-col sm:flex-row flex-wrap gap-2 items-stretch sm:items-center">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 shadow rounded w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-2 items-stretch sm:items-center justify-center">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 shadow rounded w-full sm:w-auto bg-white">
                     <label htmlFor="year">Filter by Year:</label>
                     <select
                         name="year"
@@ -79,7 +79,7 @@ export default function CharRank({ data }: { data: CorgisCoffee[]}) {
                     </select>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 shadow rounded w-full sm:w-auto">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 shadow rounded w-full sm:w-auto bg-white">
                     <select
                         name="rankBy"
                         id="rankBy"
@@ -95,7 +95,7 @@ export default function CharRank({ data }: { data: CorgisCoffee[]}) {
             </div>
 
             {/* Rankings Chart */}
-            <ResponsiveContainer width="100%" height={topCountriesData.length * 80} className="rounded shadow p-4">
+            <ResponsiveContainer width="100%" height={topCountriesData.length * 80} className="rounded shadow p-4 bg-white">
                 <BarChart data={topCountriesData} layout="vertical">
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis type="number" />
@@ -108,7 +108,10 @@ export default function CharRank({ data }: { data: CorgisCoffee[]}) {
                             return `#${rank} ${countryName}`;
                         }}
                     />
-                    <Tooltip />
+                    <Tooltip
+                        formatter={(value: number) => value.toFixed(2)}
+                    />
+
                     <Bar dataKey="Value" fill="hsl(220, 80%, 60%)" radius={[4, 4, 0, 0]} barSize={10} />
                 </BarChart>
             </ResponsiveContainer>

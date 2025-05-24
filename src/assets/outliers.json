@@ -1,0 +1,3628 @@
+[
+  {
+    "Location": {
+      "Region": "south of minas",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 1000,
+        "Max": 1000,
+        "Average": 1000
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Semi-washed / Semi-pulped",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 25,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.5,
+        "Aftertaste": 7.58,
+        "Acidity": 7.5,
+        "Body": 7.75,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 83.17
+      },
+      "Color": "Blue-Green"
+    },
+    "Year": 2011
+  },
+  {
+    "Location": {
+      "Region": "south of minas",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 900,
+        "Max": 1050,
+        "Average": 975
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Species": "Arabica",
+        "Variety": "Mundo Novo",
+        "Processing method": "nan"
+      },
+      "Production": {
+        "Number of bags": 42,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.5,
+        "Aftertaste": 7.33,
+        "Acidity": 7.75,
+        "Body": 7.5,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.0,
+        "Total": 82.58
+      },
+      "Color": "Unknown"
+    },
+    "Year": 2011
+  },
+  {
+    "Location": {
+      "Region": "cerrado",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 900,
+        "Max": 950,
+        "Average": 925
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Species": "Arabica",
+        "Variety": "Mundo Novo",
+        "Processing method": "nan"
+      },
+      "Production": {
+        "Number of bags": 58,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.33,
+        "Flavor": 7.67,
+        "Aftertaste": 7.25,
+        "Acidity": 7.5,
+        "Body": 7.5,
+        "Balance": 7.25,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.02,
+        "Total": 81.83
+      },
+      "Color": "Unknown"
+    },
+    "Year": 2011
+  },
+  {
+    "Location": {
+      "Region": "central kenya",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1600,
+        "Max": 1600,
+        "Average": 1600
+      }
+    },
+    "Data": {
+      "Owner": "rashid moledina & co. (msa) ltd.",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL34"
+      },
+      "Production": {
+        "Number of bags": 20,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.83,
+        "Flavor": 8.08,
+        "Aftertaste": 7.75,
+        "Acidity": 8.08,
+        "Body": 7.92,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.0,
+        "Total": 85.33
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "central kenya",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1580,
+        "Max": 1580,
+        "Average": 1580
+      }
+    },
+    "Data": {
+      "Owner": "rashid moledina & co. (msa) ltd.",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL34"
+      },
+      "Production": {
+        "Number of bags": 38,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.83,
+        "Aftertaste": 7.75,
+        "Acidity": 8.08,
+        "Body": 8.0,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.0,
+        "Total": 85.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "grama valley",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 1100,
+        "Max": 1100,
+        "Average": 1100
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 31,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.0,
+        "Flavor": 8.0,
+        "Aftertaste": 7.83,
+        "Acidity": 7.83,
+        "Body": 7.67,
+        "Balance": 7.67,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 85.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "nyeri",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 2000,
+        "Max": 2000,
+        "Average": 2000
+      }
+    },
+    "Data": {
+      "Owner": "dream together",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 235,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.92,
+        "Aftertaste": 7.83,
+        "Acidity": 8.0,
+        "Body": 7.58,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 84.67
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "nyeri",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 2000,
+        "Max": 2000,
+        "Average": 2000
+      }
+    },
+    "Data": {
+      "Owner": "dream together",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 235,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.92,
+        "Flavor": 7.83,
+        "Aftertaste": 7.67,
+        "Acidity": 8.0,
+        "Body": 7.67,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 84.5
+      },
+      "Color": "Blue-Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "blend",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1200,
+        "Max": 1200,
+        "Average": 1200
+      }
+    },
+    "Data": {
+      "Owner": "ibero kenya limited",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL34"
+      },
+      "Production": {
+        "Number of bags": 300,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.83,
+        "Aftertaste": 7.5,
+        "Acidity": 7.75,
+        "Body": 7.92,
+        "Balance": 7.67,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.0,
+        "Total": 84.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "central kenya",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1650,
+        "Max": 1650,
+        "Average": 1650
+      }
+    },
+    "Data": {
+      "Owner": "taylor winch (coffee) ltd.",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 150,
+        "Bag weight": 9000.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.75,
+        "Aftertaste": 7.67,
+        "Acidity": 7.75,
+        "Body": 7.83,
+        "Balance": 7.67,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.0,
+        "Total": 84.0
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "veracruz",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "ernesto rodriguez luna",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 10,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.58,
+        "Aftertaste": 7.58,
+        "Acidity": 7.58,
+        "Body": 7.5,
+        "Balance": 7.58,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.13,
+        "Total": 83.25
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "south of minas",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 1000,
+        "Max": 1000,
+        "Average": 1000
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 50,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.67,
+        "Aftertaste": 7.58,
+        "Acidity": 7.5,
+        "Body": 7.58,
+        "Balance": 7.58,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 83.17
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "mogiana",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 950,
+        "Max": 950,
+        "Average": 950
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 100,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.92,
+        "Flavor": 7.58,
+        "Aftertaste": 7.5,
+        "Acidity": 7.58,
+        "Body": 7.42,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 83.17
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "grama valley",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 1100,
+        "Max": 1100,
+        "Average": 1100
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 16,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.5,
+        "Aftertaste": 7.42,
+        "Acidity": 7.5,
+        "Body": 7.5,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.33
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "south of minas",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 950,
+        "Max": 950,
+        "Average": 950
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 44,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.58,
+        "Aftertaste": 7.25,
+        "Acidity": 7.58,
+        "Body": 7.42,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 82.33
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "south of minas",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 1000,
+        "Max": 1000,
+        "Average": 1000
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 50,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.42,
+        "Flavor": 7.5,
+        "Aftertaste": 7.33,
+        "Acidity": 7.5,
+        "Body": 7.33,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "south of minas",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 950,
+        "Max": 950,
+        "Average": 950
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Semi-washed / Semi-pulped",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 53,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.5,
+        "Aftertaste": 7.17,
+        "Acidity": 7.5,
+        "Body": 7.5,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "huazalingo, hidalgo",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 690,
+        "Max": 690,
+        "Average": 690
+      }
+    },
+    "Data": {
+      "Owner": "saul m. hernandez ramirez",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 10,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.5,
+        "Flavor": 7.42,
+        "Aftertaste": 7.25,
+        "Acidity": 7.5,
+        "Body": 7.33,
+        "Balance": 7.33,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.14,
+        "Total": 81.92
+      },
+      "Color": "None"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "grama valley",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 1100,
+        "Max": 1100,
+        "Average": 1100
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 8,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.42,
+        "Flavor": 7.58,
+        "Aftertaste": 7.25,
+        "Acidity": 7.5,
+        "Body": 7.33,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 81.92
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "tepictla",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 1250,
+        "Max": 1250,
+        "Average": 1250
+      }
+    },
+    "Data": {
+      "Owner": "sergio landa alarcon",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 100,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.42,
+        "Flavor": 7.5,
+        "Aftertaste": 7.17,
+        "Acidity": 7.67,
+        "Body": 7.33,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.13,
+        "Total": 81.75
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "south of minas",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 1000,
+        "Max": 1000,
+        "Average": 1000
+      }
+    },
+    "Data": {
+      "Owner": "nucoffee",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 17,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.42,
+        "Flavor": 7.33,
+        "Aftertaste": 7.25,
+        "Acidity": 7.42,
+        "Body": 7.5,
+        "Balance": 7.17,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 81.17
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "coatepec, coatepec",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 1264,
+        "Max": 1264,
+        "Average": 1264
+      }
+    },
+    "Data": {
+      "Owner": "alfredo bojalil",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 253,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 6.92,
+        "Flavor": 7.17,
+        "Aftertaste": 7.17,
+        "Acidity": 7.17,
+        "Body": 7.08,
+        "Balance": 7.08,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.0,
+        "Total": 79.67
+      },
+      "Color": "Unknown"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "san rafael",
+      "Country": "Costa Rica",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "brent hall",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Catuai"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 2.0
+      },
+      "Scores": {
+        "Aroma": 7.17,
+        "Flavor": 7.42,
+        "Aftertaste": 7.5,
+        "Acidity": 8.0,
+        "Body": 7.25,
+        "Balance": 7.83,
+        "Uniformity": 10.0,
+        "Sweetness": 6.67,
+        "Moisture": 0.1,
+        "Total": 79.17
+      },
+      "Color": "None"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "ocosingo",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 1200,
+        "Max": 1200,
+        "Average": 1200
+      }
+    },
+    "Data": {
+      "Owner": "francisco hernandez lorenzo",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 100,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.17,
+        "Flavor": 6.92,
+        "Aftertaste": 6.67,
+        "Acidity": 6.83,
+        "Body": 7.25,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 75.17
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "coatepec",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 1250,
+        "Max": 1250,
+        "Average": 1250
+      }
+    },
+    "Data": {
+      "Owner": "eugene holman pew",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Typica"
+      },
+      "Production": {
+        "Number of bags": 20,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.0,
+        "Aftertaste": 7.17,
+        "Acidity": 7.58,
+        "Body": 7.33,
+        "Balance": 7.33,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 73.83
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "kona",
+      "Country": "United States",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "kona pacific farmers cooperative",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Hawaiian Kona"
+      },
+      "Production": {
+        "Number of bags": 22,
+        "Bag weight": 45.3592
+      },
+      "Scores": {
+        "Aroma": 7.17,
+        "Flavor": 7.17,
+        "Aftertaste": 7.17,
+        "Acidity": 7.58,
+        "Body": 7.67,
+        "Balance": 6.92,
+        "Uniformity": 9.33,
+        "Sweetness": 6.67,
+        "Moisture": 0.0,
+        "Total": 73.67
+      },
+      "Color": "Unknown"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "tlatlauquitepec",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 800,
+        "Max": 800,
+        "Average": 800
+      }
+    },
+    "Data": {
+      "Owner": "jose armando norberto borzani lemini",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 10,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 6.92,
+        "Flavor": 6.92,
+        "Aftertaste": 6.92,
+        "Acidity": 6.92,
+        "Body": 7.17,
+        "Balance": 7.0,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 71.08
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "juchique de ferrer",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 900,
+        "Max": 900,
+        "Average": 900
+      }
+    },
+    "Data": {
+      "Owner": "juan carlos garcia lopez",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Bourbon"
+      },
+      "Production": {
+        "Number of bags": 12,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.08,
+        "Flavor": 6.83,
+        "Aftertaste": 6.25,
+        "Acidity": 7.42,
+        "Body": 7.25,
+        "Balance": 6.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 68.33
+      },
+      "Color": "None"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "department d'artibonite , haiti",
+      "Country": "Haiti",
+      "Altitude": {
+        "Min": 350,
+        "Max": 350,
+        "Average": 350
+      }
+    },
+    "Data": {
+      "Owner": "myriam kaplan-pasternak",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Typica"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 2.0
+      },
+      "Scores": {
+        "Aroma": 6.75,
+        "Flavor": 6.58,
+        "Aftertaste": 6.42,
+        "Acidity": 6.67,
+        "Body": 7.08,
+        "Balance": 6.67,
+        "Uniformity": 9.33,
+        "Sweetness": 6.0,
+        "Moisture": 0.14,
+        "Total": 67.92
+      },
+      "Color": "Blue-Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "nuevo oriente",
+      "Country": "Guatemala",
+      "Altitude": {
+        "Min": 1417,
+        "Max": 1417,
+        "Average": 1417
+      }
+    },
+    "Data": {
+      "Owner": "juan luis alvarado romero",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Catuai"
+      },
+      "Production": {
+        "Number of bags": 275,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.5,
+        "Flavor": 6.67,
+        "Aftertaste": 6.67,
+        "Acidity": 7.67,
+        "Body": 7.33,
+        "Balance": 6.67,
+        "Uniformity": 8.0,
+        "Sweetness": 1.33,
+        "Moisture": 0.1,
+        "Total": 59.83
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "chikmagalur",
+      "Country": "United States",
+      "Altitude": {
+        "Min": 3000,
+        "Max": 3000,
+        "Average": 3000
+      }
+    },
+    "Data": {
+      "Owner": "andrew hetzel",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Robusta",
+        "Variety": "Arusha"
+      },
+      "Production": {
+        "Number of bags": 100,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.92,
+        "Flavor": 7.5,
+        "Aftertaste": 7.42,
+        "Acidity": 7.42,
+        "Body": 7.42,
+        "Balance": 7.42,
+        "Uniformity": 9.33,
+        "Sweetness": 7.58,
+        "Moisture": 0.0,
+        "Total": 79.33
+      },
+      "Color": "Green"
+    },
+    "Year": 2012
+  },
+  {
+    "Location": {
+      "Region": "kapchorwa eastern",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1950,
+        "Max": 1950,
+        "Average": 1950
+      }
+    },
+    "Data": {
+      "Owner": "kabum trading company",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 100,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.42,
+        "Flavor": 8.17,
+        "Aftertaste": 8.17,
+        "Acidity": 8.17,
+        "Body": 7.83,
+        "Balance": 7.92,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 86.83
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "muranga",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1800,
+        "Max": 1800,
+        "Average": 1800
+      }
+    },
+    "Data": {
+      "Owner": "daniel magu",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL34"
+      },
+      "Production": {
+        "Number of bags": 320,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 8.08,
+        "Flavor": 8.0,
+        "Aftertaste": 8.0,
+        "Acidity": 8.25,
+        "Body": 7.92,
+        "Balance": 7.92,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 86.25
+      },
+      "Color": "Blue-Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "kiambu",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1520,
+        "Max": 2200,
+        "Average": 1860
+      }
+    },
+    "Data": {
+      "Owner": "lusso lab",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.92,
+        "Flavor": 8.17,
+        "Aftertaste": 7.83,
+        "Acidity": 8.5,
+        "Body": 7.5,
+        "Balance": 7.92,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 86.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "eastern",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1400,
+        "Max": 1900,
+        "Average": 1650
+      }
+    },
+    "Data": {
+      "Owner": "kawacom uganda ltd",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.17,
+        "Flavor": 8.17,
+        "Aftertaste": 7.92,
+        "Acidity": 8.08,
+        "Body": 7.83,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 85.92
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "bulambuli eastern region",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1600,
+        "Max": 1600,
+        "Average": 1600
+      }
+    },
+    "Data": {
+      "Owner": "kyagalanyi ltd",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 320,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.33,
+        "Flavor": 7.92,
+        "Aftertaste": 7.67,
+        "Acidity": 7.92,
+        "Body": 7.67,
+        "Balance": 7.92,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 85.5
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "kapchorwa",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1950,
+        "Max": 1950,
+        "Average": 1950
+      }
+    },
+    "Data": {
+      "Owner": "great lakes coffee uganda",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 150,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.08,
+        "Flavor": 8.0,
+        "Aftertaste": 7.83,
+        "Acidity": 7.67,
+        "Body": 8.0,
+        "Balance": 7.83,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 85.42
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "eastern",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1400,
+        "Max": 1900,
+        "Average": 1650
+      }
+    },
+    "Data": {
+      "Owner": "kawacom uganda ltd",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.92,
+        "Aftertaste": 7.67,
+        "Acidity": 7.67,
+        "Body": 8.25,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 84.83
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Data": {
+      "Owner": "taylor winch (coffee) ltd.",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 11,
+        "Bag weight": 660.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.75,
+        "Aftertaste": 7.75,
+        "Acidity": 8.08,
+        "Body": 7.75,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.0,
+        "Total": 84.58
+      },
+      "Color": "Green"
+    },
+    "Location": {
+      "Country": "Kenya",
+      "Region": "nan",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "kenya",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1,
+        "Max": 500,
+        "Average": 250
+      }
+    },
+    "Data": {
+      "Owner": "itochu corporation",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 300,
+        "Bag weight": 18000.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.75,
+        "Aftertaste": 7.75,
+        "Acidity": 7.75,
+        "Body": 7.75,
+        "Balance": 7.83,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.08,
+        "Total": 84.17
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "eastern",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1800,
+        "Max": 1800,
+        "Average": 1800
+      }
+    },
+    "Data": {
+      "Owner": "bulamburi coffee farmers association",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 100,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.67,
+        "Aftertaste": 7.42,
+        "Acidity": 7.75,
+        "Body": 7.75,
+        "Balance": 7.67,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 83.58
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "kapchorwa",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1800,
+        "Max": 1800,
+        "Average": 1800
+      }
+    },
+    "Data": {
+      "Owner": "star cafe ltd",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 300,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.83,
+        "Flavor": 7.58,
+        "Aftertaste": 7.5,
+        "Acidity": 7.5,
+        "Body": 7.58,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 83.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "eastern",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1400,
+        "Max": 1900,
+        "Average": 1650
+      }
+    },
+    "Data": {
+      "Owner": "kawacom uganda ltd",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.0,
+        "Flavor": 7.5,
+        "Aftertaste": 7.5,
+        "Acidity": 7.58,
+        "Body": 7.33,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.92
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "west nile",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1400,
+        "Max": 1400,
+        "Average": 1400
+      }
+    },
+    "Data": {
+      "Owner": "nyapea coffee farmers association",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.58,
+        "Aftertaste": 7.58,
+        "Acidity": 7.5,
+        "Body": 7.5,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.92
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "mt elgon",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1400,
+        "Max": 1900,
+        "Average": 1650
+      }
+    },
+    "Data": {
+      "Owner": "kawacom uganda ltd",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.5,
+        "Aftertaste": 7.33,
+        "Acidity": 7.67,
+        "Body": 7.5,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.67
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "eastern",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1400,
+        "Max": 1900,
+        "Average": 1650
+      }
+    },
+    "Data": {
+      "Owner": "kawacom uganda ltd",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.83,
+        "Flavor": 7.5,
+        "Aftertaste": 7.42,
+        "Acidity": 7.58,
+        "Body": 7.42,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.58
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "veracruz",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 1338,
+        "Max": 1338,
+        "Average": 1338
+      }
+    },
+    "Data": {
+      "Owner": "jesus carlos cardenas valdivia",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 150,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.58,
+        "Aftertaste": 7.42,
+        "Acidity": 7.42,
+        "Body": 7.42,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.25
+      },
+      "Color": "Blue-Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "yauco region",
+      "Country": "United States",
+      "Altitude": {
+        "Min": 853,
+        "Max": 853,
+        "Average": 853
+      }
+    },
+    "Data": {
+      "Owner": "german negron",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Other"
+      },
+      "Production": {
+        "Number of bags": 18,
+        "Bag weight": 2.26796
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.75,
+        "Aftertaste": 7.67,
+        "Acidity": 7.58,
+        "Body": 7.58,
+        "Balance": 7.67,
+        "Uniformity": 6.67,
+        "Sweetness": 10.0,
+        "Moisture": 0.0,
+        "Total": 81.08
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "eastern",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1700,
+        "Max": 1700,
+        "Average": 1700
+      }
+    },
+    "Data": {
+      "Owner": "kyagalanyi ltd",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 320,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.33,
+        "Flavor": 6.92,
+        "Aftertaste": 7.17,
+        "Acidity": 7.33,
+        "Body": 7.42,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 81.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "kona",
+      "Country": "United States",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "kona pacific farmers cooperative",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "nan"
+      },
+      "Production": {
+        "Number of bags": 5,
+        "Bag weight": 45.3592
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.67,
+        "Aftertaste": 7.58,
+        "Acidity": 7.67,
+        "Body": 7.42,
+        "Balance": 7.42,
+        "Uniformity": 9.33,
+        "Sweetness": 6.0,
+        "Moisture": 0.12,
+        "Total": 77.58
+      },
+      "Color": "Green"
+    },
+    "Year": 2013
+  },
+  {
+    "Data": {
+      "Owner": "honor dela fuente",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "nan"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 2.26796
+      },
+      "Scores": {
+        "Aroma": 8.0,
+        "Flavor": 7.33,
+        "Aftertaste": 7.75,
+        "Acidity": 7.33,
+        "Body": 7.42,
+        "Balance": 7.67,
+        "Uniformity": 6.67,
+        "Sweetness": 6.67,
+        "Moisture": 0.0,
+        "Total": 72.83
+      },
+      "Color": "Bluish-Green"
+    },
+    "Location": {
+      "Country": "Colombia",
+      "Region": "nan",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Year": 2013
+  },
+  {
+    "Location": {
+      "Region": "nyeri",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1754,
+        "Max": 1754,
+        "Average": 1754
+      }
+    },
+    "Data": {
+      "Owner": "jungle estate",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 12,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.08,
+        "Flavor": 8.08,
+        "Aftertaste": 8.0,
+        "Acidity": 8.0,
+        "Body": 7.83,
+        "Balance": 8.08,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 86.08
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "kirinyaga",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1900,
+        "Max": 1900,
+        "Average": 1900
+      }
+    },
+    "Data": {
+      "Owner": "essencecoffee",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 16,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.92,
+        "Flavor": 7.92,
+        "Aftertaste": 7.83,
+        "Acidity": 8.08,
+        "Body": 7.83,
+        "Balance": 7.92,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.1,
+        "Total": 85.5
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "nyeri",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1800,
+        "Max": 1800,
+        "Average": 1800
+      }
+    },
+    "Data": {
+      "Owner": "lydiah mwangi",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL34"
+      },
+      "Production": {
+        "Number of bags": 150,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.92,
+        "Flavor": 7.83,
+        "Aftertaste": 7.58,
+        "Acidity": 7.92,
+        "Body": 7.75,
+        "Balance": 7.83,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.13,
+        "Total": 84.75
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "kenya",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1,
+        "Max": 500,
+        "Average": 250
+      }
+    },
+    "Data": {
+      "Owner": "taylor winch (coffee) ltd.",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 300,
+        "Bag weight": 2.0
+      },
+      "Scores": {
+        "Aroma": 7.83,
+        "Flavor": 7.75,
+        "Aftertaste": 7.67,
+        "Acidity": 7.75,
+        "Body": 7.83,
+        "Balance": 8.5,
+        "Uniformity": 9.33,
+        "Sweetness": 9.33,
+        "Moisture": 0.1,
+        "Total": 83.17
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "eastern",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1800,
+        "Max": 1800,
+        "Average": 1800
+      }
+    },
+    "Data": {
+      "Owner": "kabum trading company",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 84,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.0,
+        "Flavor": 7.67,
+        "Aftertaste": 7.5,
+        "Acidity": 7.42,
+        "Body": 7.33,
+        "Balance": 7.58,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.1,
+        "Total": 83.17
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "mzuzu",
+      "Country": "Malawi",
+      "Altitude": {
+        "Min": 1442,
+        "Max": 1442,
+        "Average": 1442
+      }
+    },
+    "Data": {
+      "Owner": "afca",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 29,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.58,
+        "Aftertaste": 7.42,
+        "Acidity": 7.5,
+        "Body": 7.33,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.75
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "mzuzu",
+      "Country": "Malawi",
+      "Altitude": {
+        "Min": 1450,
+        "Max": 1450,
+        "Average": 1450
+      }
+    },
+    "Data": {
+      "Owner": "afca",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 10,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.33,
+        "Flavor": 7.58,
+        "Aftertaste": 7.42,
+        "Acidity": 7.58,
+        "Body": 7.33,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.33
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "mzuzu",
+      "Country": "Malawi",
+      "Altitude": {
+        "Min": 1180,
+        "Max": 1180,
+        "Average": 1180
+      }
+    },
+    "Data": {
+      "Owner": "afca",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 10,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.42,
+        "Aftertaste": 7.33,
+        "Acidity": 7.42,
+        "Body": 7.58,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.13,
+        "Total": 82.25
+      },
+      "Color": "Blue-Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "cerrado",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "bourbon specialty coffees",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 300,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.5,
+        "Aftertaste": 7.42,
+        "Acidity": 7.25,
+        "Body": 7.5,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 82.17
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "mzuzu",
+      "Country": "Malawi",
+      "Altitude": {
+        "Min": 2500,
+        "Max": 2500,
+        "Average": 2500
+      }
+    },
+    "Data": {
+      "Owner": "afca",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 16,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.5,
+        "Flavor": 7.42,
+        "Aftertaste": 7.33,
+        "Acidity": 7.58,
+        "Body": 7.33,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.13,
+        "Total": 82.0
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "kakoma",
+      "Country": "Malawi",
+      "Altitude": {
+        "Min": 1556,
+        "Max": 1556,
+        "Average": 1556
+      }
+    },
+    "Data": {
+      "Owner": "afca",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 24,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.42,
+        "Aftertaste": 7.33,
+        "Acidity": 7.33,
+        "Body": 7.33,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.13,
+        "Total": 81.83
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "mzuzu",
+      "Country": "Malawi",
+      "Altitude": {
+        "Min": 1100,
+        "Max": 1100,
+        "Average": 1100
+      }
+    },
+    "Data": {
+      "Owner": "afca",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 10,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.42,
+        "Flavor": 7.42,
+        "Aftertaste": 7.17,
+        "Acidity": 7.58,
+        "Body": 7.33,
+        "Balance": 7.33,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.13,
+        "Total": 81.58
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "mzuzu",
+      "Country": "Malawi",
+      "Altitude": {
+        "Min": 1599,
+        "Max": 1599,
+        "Average": 1599
+      }
+    },
+    "Data": {
+      "Owner": "afca",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 15,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.42,
+        "Aftertaste": 6.92,
+        "Acidity": 7.5,
+        "Body": 7.5,
+        "Balance": 7.17,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 81.5
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "mzuzu",
+      "Country": "Malawi",
+      "Altitude": {
+        "Min": 1422,
+        "Max": 1422,
+        "Average": 1422
+      }
+    },
+    "Data": {
+      "Owner": "afca",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 12,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.17,
+        "Aftertaste": 7.33,
+        "Acidity": 7.42,
+        "Body": 7.08,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 81.42
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "mzuzu",
+      "Country": "Malawi",
+      "Altitude": {
+        "Min": 1200,
+        "Max": 1200,
+        "Average": 1200
+      }
+    },
+    "Data": {
+      "Owner": "afca",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 31,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.33,
+        "Aftertaste": 7.08,
+        "Acidity": 7.33,
+        "Body": 7.33,
+        "Balance": 7.25,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.13,
+        "Total": 81.33
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "san marcos",
+      "Country": "Honduras",
+      "Altitude": {
+        "Min": 1350,
+        "Max": 1350,
+        "Average": 1350
+      }
+    },
+    "Data": {
+      "Owner": "mayra yessenia torres",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Caturra"
+      },
+      "Production": {
+        "Number of bags": 275,
+        "Bag weight": 18975.0
+      },
+      "Scores": {
+        "Aroma": 7.42,
+        "Flavor": 7.25,
+        "Aftertaste": 7.25,
+        "Acidity": 7.33,
+        "Body": 7.25,
+        "Balance": 7.17,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 81.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "cerrado",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "bourbon specialty coffees",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 300,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.75,
+        "Aftertaste": 7.83,
+        "Acidity": 7.75,
+        "Body": 7.83,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 81.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "kona",
+      "Country": "United States",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "eileen koyanagi",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Hawaiian Kona"
+      },
+      "Production": {
+        "Number of bags": 3,
+        "Bag weight": 45.3592
+      },
+      "Scores": {
+        "Aroma": 7.5,
+        "Flavor": 7.25,
+        "Aftertaste": 7.0,
+        "Acidity": 7.25,
+        "Body": 7.42,
+        "Balance": 7.33,
+        "Uniformity": 8.0,
+        "Sweetness": 6.67,
+        "Moisture": 0.0,
+        "Total": 74.42
+      },
+      "Color": "Blue-Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "intibuca",
+      "Country": "Honduras",
+      "Altitude": {
+        "Min": 1350,
+        "Max": 1350,
+        "Average": 1350
+      }
+    },
+    "Data": {
+      "Owner": "cafes finos de exportacion s de r.l.",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Pacas"
+      },
+      "Production": {
+        "Number of bags": 275,
+        "Bag weight": 2.0
+      },
+      "Scores": {
+        "Aroma": 7.0,
+        "Flavor": 7.17,
+        "Aftertaste": 6.83,
+        "Acidity": 7.17,
+        "Body": 7.0,
+        "Balance": 7.17,
+        "Uniformity": 8.0,
+        "Sweetness": 8.0,
+        "Moisture": 0.11,
+        "Total": 73.42
+      },
+      "Color": "Green"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "kwanza norte province, angola",
+      "Country": "United States",
+      "Altitude": {
+        "Min": 795,
+        "Max": 795,
+        "Average": 795
+      }
+    },
+    "Data": {
+      "Owner": "james moore",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Robusta",
+        "Variety": "nan"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 1.0
+      },
+      "Scores": {
+        "Aroma": 7.33,
+        "Flavor": 7.33,
+        "Aftertaste": 7.17,
+        "Acidity": 7.42,
+        "Body": 7.5,
+        "Balance": 7.17,
+        "Uniformity": 9.33,
+        "Sweetness": 7.42,
+        "Moisture": 0.0,
+        "Total": 77.17
+      },
+      "Color": "Unknown"
+    },
+    "Year": 2014
+  },
+  {
+    "Location": {
+      "Region": "eastern",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1800,
+        "Max": 1800,
+        "Average": 1800
+      }
+    },
+    "Data": {
+      "Owner": "bugisu cooperative union",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 20,
+        "Bag weight": 1218.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.75,
+        "Aftertaste": 7.33,
+        "Acidity": 7.75,
+        "Body": 7.67,
+        "Balance": 7.58,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 83.42
+      },
+      "Color": "Green"
+    },
+    "Year": 2015
+  },
+  {
+    "Location": {
+      "Region": "sipi, mt elgon",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "kawacom uganda ltd",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 150,
+        "Bag weight": 9000.0
+      },
+      "Scores": {
+        "Aroma": 7.5,
+        "Flavor": 7.67,
+        "Aftertaste": 7.67,
+        "Acidity": 7.42,
+        "Body": 7.67,
+        "Balance": 7.67,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 83.25
+      },
+      "Color": "Green"
+    },
+    "Year": 2015
+  },
+  {
+    "Location": {
+      "Region": "tres rios",
+      "Country": "Costa Rica",
+      "Altitude": {
+        "Min": 1200,
+        "Max": 1400,
+        "Average": 1300
+      }
+    },
+    "Data": {
+      "Owner": "cafetalera internacional cafinter, s.a.",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Caturra"
+      },
+      "Production": {
+        "Number of bags": 275,
+        "Bag weight": 18975.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.5,
+        "Aftertaste": 7.5,
+        "Acidity": 7.25,
+        "Body": 7.08,
+        "Balance": 7.42,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.09,
+        "Total": 81.83
+      },
+      "Color": "Green"
+    },
+    "Year": 2015
+  },
+  {
+    "Location": {
+      "Region": "tres rios",
+      "Country": "Costa Rica",
+      "Altitude": {
+        "Min": 1200,
+        "Max": 1400,
+        "Average": 1300
+      }
+    },
+    "Data": {
+      "Owner": "cafetalera internacional cafinter, s.a.",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Caturra"
+      },
+      "Production": {
+        "Number of bags": 275,
+        "Bag weight": 18975.0
+      },
+      "Scores": {
+        "Aroma": 7.5,
+        "Flavor": 7.5,
+        "Aftertaste": 7.33,
+        "Acidity": 7.17,
+        "Body": 7.08,
+        "Balance": 7.17,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 81.17
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2015
+  },
+  {
+    "Location": {
+      "Region": "jinotega",
+      "Country": "Nicaragua",
+      "Altitude": {
+        "Min": 110000,
+        "Max": 110000,
+        "Average": 110000
+      }
+    },
+    "Data": {
+      "Owner": "comercial internacional exportadora, s.a.",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Other"
+      },
+      "Production": {
+        "Number of bags": 275,
+        "Bag weight": 69.0
+      },
+      "Scores": {
+        "Aroma": 7.25,
+        "Flavor": 7.25,
+        "Aftertaste": 7.17,
+        "Acidity": 7.25,
+        "Body": 7.33,
+        "Balance": 7.25,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 80.75
+      },
+      "Color": "Green"
+    },
+    "Year": 2015
+  },
+  {
+    "Location": {
+      "Region": "kefa zone, gimbo distict, at a place called woka araba, south west ethiopia.",
+      "Country": "Ethiopia",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "seid damtew coffee planataion",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Other"
+      },
+      "Production": {
+        "Number of bags": 320,
+        "Bag weight": 19200.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 8.0,
+        "Aftertaste": 7.58,
+        "Acidity": 8.0,
+        "Body": 8.0,
+        "Balance": 7.92,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 85.08
+      },
+      "Color": "Green"
+    },
+    "Year": 2016
+  },
+  {
+    "Location": {
+      "Region": "eastern uganda",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1800,
+        "Max": 1800,
+        "Average": 1800
+      }
+    },
+    "Data": {
+      "Owner": "kyagalanyi coffee ltd",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 200,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.17,
+        "Flavor": 7.92,
+        "Aftertaste": 7.75,
+        "Acidity": 7.75,
+        "Body": 7.67,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 85.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2016
+  },
+  {
+    "Location": {
+      "Region": "eastern uganda",
+      "Country": "Uganda",
+      "Altitude": {
+        "Min": 1750,
+        "Max": 1750,
+        "Average": 1750
+      }
+    },
+    "Data": {
+      "Owner": "ecom japan limited",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL14"
+      },
+      "Production": {
+        "Number of bags": 200,
+        "Bag weight": 12000.0
+      },
+      "Scores": {
+        "Aroma": 7.92,
+        "Flavor": 7.75,
+        "Aftertaste": 7.67,
+        "Acidity": 7.75,
+        "Body": 7.83,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 84.5
+      },
+      "Color": "Green"
+    },
+    "Year": 2016
+  },
+  {
+    "Location": {
+      "Region": "antigua",
+      "Country": "Guatemala",
+      "Altitude": {
+        "Min": 1500,
+        "Max": 1500,
+        "Average": 1500
+      }
+    },
+    "Data": {
+      "Owner": "juan luis alvarado romero",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Caturra"
+      },
+      "Production": {
+        "Number of bags": 250,
+        "Bag weight": 1500.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.75,
+        "Aftertaste": 7.42,
+        "Acidity": 7.75,
+        "Body": 7.58,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 83.17
+      },
+      "Color": "Green"
+    },
+    "Year": 2016
+  },
+  {
+    "Location": {
+      "Region": "monte carmelo",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 973,
+        "Max": 973,
+        "Average": 973
+      }
+    },
+    "Data": {
+      "Owner": "gabriel barbara",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 200,
+        "Bag weight": 59.0
+      },
+      "Scores": {
+        "Aroma": 7.42,
+        "Flavor": 7.5,
+        "Aftertaste": 7.42,
+        "Acidity": 7.5,
+        "Body": 7.42,
+        "Balance": 7.25,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 81.83
+      },
+      "Color": "Green"
+    },
+    "Year": 2016
+  },
+  {
+    "Location": {
+      "Region": "alta paulista (sao paulo)",
+      "Country": "Brazil",
+      "Altitude": {
+        "Min": 695,
+        "Max": 695,
+        "Average": 695
+      }
+    },
+    "Data": {
+      "Owner": "gregorio sebba",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 500,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.42,
+        "Aftertaste": 7.5,
+        "Acidity": 7.25,
+        "Body": 7.75,
+        "Balance": 7.58,
+        "Uniformity": 9.33,
+        "Sweetness": 9.33,
+        "Moisture": 0.11,
+        "Total": 81.08
+      },
+      "Color": "Green"
+    },
+    "Year": 2016
+  },
+  {
+    "Location": {
+      "Region": "oriente",
+      "Country": "Guatemala",
+      "Altitude": {
+        "Min": 190164,
+        "Max": 190164,
+        "Average": 190164
+      }
+    },
+    "Data": {
+      "Owner": "juan luis alvarado romero",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Bourbon"
+      },
+      "Production": {
+        "Number of bags": 25,
+        "Bag weight": 69.0
+      },
+      "Scores": {
+        "Aroma": 7.5,
+        "Flavor": 7.42,
+        "Aftertaste": 7.25,
+        "Acidity": 7.58,
+        "Body": 7.33,
+        "Balance": 7.42,
+        "Uniformity": 9.33,
+        "Sweetness": 9.33,
+        "Moisture": 0.1,
+        "Total": 79.75
+      },
+      "Color": "Green"
+    },
+    "Year": 2016
+  },
+  {
+    "Location": {
+      "Region": "chickmangalore",
+      "Country": "India",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "joshua marsceau",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "nan"
+      },
+      "Production": {
+        "Number of bags": 20,
+        "Bag weight": 50.0
+      },
+      "Scores": {
+        "Aroma": 7.67,
+        "Flavor": 7.33,
+        "Aftertaste": 7.17,
+        "Acidity": 6.67,
+        "Body": 7.17,
+        "Balance": 7.42,
+        "Uniformity": 9.33,
+        "Sweetness": 6.67,
+        "Moisture": 0.0,
+        "Total": 76.83
+      },
+      "Color": "Green"
+    },
+    "Year": 2016
+  },
+  {
+    "Location": {
+      "Region": "jalapa",
+      "Country": "Nicaragua",
+      "Altitude": {
+        "Min": 1100,
+        "Max": 1100,
+        "Average": 1100
+      }
+    },
+    "Data": {
+      "Owner": "exportadora atlantic, s.a.",
+      "Type": {
+        "Processing method": "Other",
+        "Species": "Arabica",
+        "Variety": "Caturra"
+      },
+      "Production": {
+        "Number of bags": 550,
+        "Bag weight": 69.0
+      },
+      "Scores": {
+        "Aroma": 7.25,
+        "Flavor": 6.58,
+        "Aftertaste": 6.33,
+        "Acidity": 6.25,
+        "Body": 6.42,
+        "Balance": 6.08,
+        "Uniformity": 6.0,
+        "Sweetness": 6.0,
+        "Moisture": 0.13,
+        "Total": 63.08
+      },
+      "Color": "Green"
+    },
+    "Year": 2016
+  },
+  {
+    "Location": {
+      "Region": "boquete",
+      "Country": "Panama",
+      "Altitude": {
+        "Min": 1600,
+        "Max": 1600,
+        "Average": 1600
+      }
+    },
+    "Data": {
+      "Owner": "gonzalo hernandez",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Gesha"
+      },
+      "Production": {
+        "Number of bags": 37,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.0,
+        "Flavor": 8.0,
+        "Aftertaste": 7.92,
+        "Acidity": 8.08,
+        "Body": 7.83,
+        "Balance": 8.0,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.08,
+        "Total": 85.83
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "addis ababa",
+      "Country": "Ethiopia",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Data": {
+      "Owner": "seid damtew coffee planataion",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Caturra"
+      },
+      "Production": {
+        "Number of bags": 320,
+        "Bag weight": 19200.0
+      },
+      "Scores": {
+        "Aroma": 7.83,
+        "Flavor": 8.0,
+        "Aftertaste": 7.83,
+        "Acidity": 8.17,
+        "Body": 7.92,
+        "Balance": 8.0,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.09,
+        "Total": 85.75
+      },
+      "Color": "None"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "veracruz",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 1300,
+        "Max": 1300,
+        "Average": 1300
+      }
+    },
+    "Data": {
+      "Owner": "cafes tomari sa de cv",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 200,
+        "Bag weight": 69.0
+      },
+      "Scores": {
+        "Aroma": 7.83,
+        "Flavor": 7.83,
+        "Aftertaste": 7.58,
+        "Acidity": 7.92,
+        "Body": 7.42,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 83.92
+      },
+      "Color": "Green"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "meru county",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1700,
+        "Max": 1700,
+        "Average": 1700
+      }
+    },
+    "Data": {
+      "Owner": "kennedy macharia",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 200,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 8.08,
+        "Flavor": 7.67,
+        "Aftertaste": 7.67,
+        "Acidity": 7.58,
+        "Body": 7.25,
+        "Balance": 7.67,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 83.67
+      },
+      "Color": "Bluish-Green"
+    },
+    "Year": 2017
+  },
+  {
+    "Data": {
+      "Owner": "andrea bernal",
+      "Type": {
+        "Species": "Arabica",
+        "Processing method": "nan",
+        "Variety": "nan"
+      },
+      "Production": {
+        "Number of bags": 200,
+        "Bag weight": 13800.0
+      },
+      "Scores": {
+        "Aroma": 7.92,
+        "Flavor": 7.5,
+        "Aftertaste": 7.5,
+        "Acidity": 7.58,
+        "Body": 7.67,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 83.17
+      },
+      "Color": "Green"
+    },
+    "Location": {
+      "Country": "Peru",
+      "Region": "nan",
+      "Altitude": {
+        "Min": 0,
+        "Max": 0,
+        "Average": 0
+      }
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "dala",
+      "Country": "Vietnam",
+      "Altitude": {
+        "Min": 1550,
+        "Max": 1550,
+        "Average": 1550
+      }
+    },
+    "Data": {
+      "Owner": "sunvirtue co., ltd.",
+      "Type": {
+        "Processing method": "Natural / Dry",
+        "Species": "Arabica",
+        "Variety": "Catimor"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 2.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.42,
+        "Aftertaste": 7.08,
+        "Acidity": 7.33,
+        "Body": 7.58,
+        "Balance": 8.58,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.07,
+        "Total": 83.17
+      },
+      "Color": "None"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "nyeri",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1754,
+        "Max": 1754,
+        "Average": 1754
+      }
+    },
+    "Data": {
+      "Owner": "jungle estate",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 27,
+        "Bag weight": 50.0
+      },
+      "Scores": {
+        "Aroma": 7.75,
+        "Flavor": 7.58,
+        "Aftertaste": 7.42,
+        "Acidity": 7.58,
+        "Body": 7.5,
+        "Balance": 7.5,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.1,
+        "Total": 82.83
+      },
+      "Color": "Green"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "huehuetenango",
+      "Country": "Guatemala",
+      "Altitude": {
+        "Min": 190164,
+        "Max": 190164,
+        "Average": 190164
+      }
+    },
+    "Data": {
+      "Owner": "juan luis alvarado romero",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Bourbon"
+      },
+      "Production": {
+        "Number of bags": 25,
+        "Bag weight": 69.0
+      },
+      "Scores": {
+        "Aroma": 7.42,
+        "Flavor": 7.42,
+        "Aftertaste": 7.08,
+        "Acidity": 7.5,
+        "Body": 7.42,
+        "Balance": 7.33,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 81.58
+      },
+      "Color": "Green"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "veracruz",
+      "Country": "Mexico",
+      "Altitude": {
+        "Min": 1100,
+        "Max": 1100,
+        "Average": 1100
+      }
+    },
+    "Data": {
+      "Owner": "cafes tomari sa de cv",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "Mundo Novo"
+      },
+      "Production": {
+        "Number of bags": 200,
+        "Bag weight": 69.0
+      },
+      "Scores": {
+        "Aroma": 7.58,
+        "Flavor": 7.33,
+        "Aftertaste": 7.08,
+        "Acidity": 7.33,
+        "Body": 7.5,
+        "Balance": 7.33,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.12,
+        "Total": 81.42
+      },
+      "Color": "Green"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "kiambu",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1600,
+        "Max": 1600,
+        "Average": 1600
+      }
+    },
+    "Data": {
+      "Owner": "lydiah mwangi",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL28"
+      },
+      "Production": {
+        "Number of bags": 150,
+        "Bag weight": 60.0
+      },
+      "Scores": {
+        "Aroma": 7.17,
+        "Flavor": 7.58,
+        "Aftertaste": 7.5,
+        "Acidity": 7.5,
+        "Body": 8.0,
+        "Balance": 7.75,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 80.92
+      },
+      "Color": "Green"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "dala",
+      "Country": "Vietnam",
+      "Altitude": {
+        "Min": 1550,
+        "Max": 1550,
+        "Average": 1550
+      }
+    },
+    "Data": {
+      "Owner": "sunvirtue co., ltd.",
+      "Type": {
+        "Processing method": "Other",
+        "Species": "Arabica",
+        "Variety": "Catimor"
+      },
+      "Production": {
+        "Number of bags": 1,
+        "Bag weight": 2.0
+      },
+      "Scores": {
+        "Aroma": 7.42,
+        "Flavor": 7.25,
+        "Aftertaste": 7.25,
+        "Acidity": 7.58,
+        "Body": 7.42,
+        "Balance": 7.33,
+        "Uniformity": 8.67,
+        "Sweetness": 10.0,
+        "Moisture": 0.0,
+        "Total": 80.17
+      },
+      "Color": "Unknown"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "kiambu",
+      "Country": "Kenya",
+      "Altitude": {
+        "Min": 1500,
+        "Max": 1500,
+        "Average": 1500
+      }
+    },
+    "Data": {
+      "Owner": "kennedy macharia",
+      "Type": {
+        "Processing method": "Washed / Wet",
+        "Species": "Arabica",
+        "Variety": "SL34"
+      },
+      "Production": {
+        "Number of bags": 200,
+        "Bag weight": 12000.0
+      },
+      "Scores": {
+        "Aroma": 7.0,
+        "Flavor": 7.08,
+        "Aftertaste": 7.0,
+        "Acidity": 7.17,
+        "Body": 7.25,
+        "Balance": 7.25,
+        "Uniformity": 10.0,
+        "Sweetness": 10.0,
+        "Moisture": 0.11,
+        "Total": 79.83
+      },
+      "Color": "Unknown"
+    },
+    "Year": 2017
+  },
+  {
+    "Location": {
+      "Region": "comayagua",
+      "Country": "Honduras",
+      "Altitude": {
+        "Min": 1400,
+        "Max": 1400,
+        "Average": 1400
+      }
+    },
+    "Data": {
+      "Owner": "bismarck castro",
+      "Type": {
+        "Species": "Arabica",
+        "Variety": "Caturra",
+        "Processing method": "nan"
+      },
+      "Production": {
+        "Number of bags": 275,
+        "Bag weight": 69.0
+      },
+      "Scores": {
+        "Aroma": 0.0,
+        "Flavor": 0.0,
+        "Aftertaste": 0.0,
+        "Acidity": 0.0,
+        "Body": 0.0,
+        "Balance": 0.0,
+        "Uniformity": 0.0,
+        "Sweetness": 0.0,
+        "Moisture": 0.12,
+        "Total": 0.0
+      },
+      "Color": "Green"
+    },
+    "Year": 2017
+  }
+]
