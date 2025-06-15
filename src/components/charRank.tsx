@@ -47,8 +47,10 @@ export default function CharRank({ data }: { data: CorgisCoffee[] }) {
             } & Record<keyof typeof scoreCategories, number>
         >)
     )
+        .filter(averaged => averaged.count >= 3) // Ensure at least 3 entries per country
         .map(averaged => ({
             country: averaged.country,
+            sampleSize: averaged.count, // Show sample size for transparency
             Value:
                 rankBy === 'Total'
                     ? (averaged.totalScore / averaged.count)
