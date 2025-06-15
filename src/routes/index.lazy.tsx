@@ -3,6 +3,7 @@ import { cleanedCoffeeData } from '../utils';
 import AvgChar from '../components/avgChar';
 import CharRank from '../components/charRank';
 import MostBags from '../components/mostBags';
+import CharRankInnaccurate from '../components/charRankInnaccurate';
 
 export const Route = createLazyFileRoute('/')({
   component: Index,
@@ -14,6 +15,8 @@ function Index() {
       <AvgChar data={cleanedCoffeeData} />
       <hr className='my-4' />
       <CharRank data={cleanedCoffeeData} />
+      <hr className='my-4' />
+      <CharRankInnaccurate data={cleanedCoffeeData} />
       <hr className='my-4' />
       <MostBags data={cleanedCoffeeData} />
     </div>
