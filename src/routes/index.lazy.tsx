@@ -1,9 +1,9 @@
 import { createLazyFileRoute } from '@tanstack/react-router'
 import { cleanedCoffeeData } from '../utils';
-import AvgChar from '../components/avgChar';
-import CharRank from '../components/charRank';
-import MostBags from '../components/mostBags';
-import CharRankInnaccurate from '../components/charRankInnaccurate';
+import AvgChar from '../components/AvgChar';
+import CharRank from '../components/CharRank';
+import MostBags from '../components/MostBags';
+import CharRankInnaccurate from '../components/OldCharRank';
 
 export const Route = createLazyFileRoute('/')({
   component: Index,
@@ -16,8 +16,8 @@ function Index() {
       <hr className='my-4' />
       <CharRank data={cleanedCoffeeData} />
       <hr className='my-4' />
-      <CharRankInnaccurate data={cleanedCoffeeData} />
-      <hr className='my-4' />
+      {/* <CharRankInnaccurate data={cleanedCoffeeData} /> */}
+      {/* <hr className='my-4' /> */}
       <MostBags data={cleanedCoffeeData} />
     </div>
   )
