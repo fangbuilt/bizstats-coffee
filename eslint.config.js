@@ -26,14 +26,14 @@ export default tseslint.config(
       'react-refresh': reactRefresh,
       '@tanstack/query': pluginQuery,
       '@tanstack/router': pluginRouter,
-      // 'react-compiler': reactCompiler,
+      'react-compiler': reactCompiler,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       '@tanstack/query/exhaustive-deps': 'error',
       '@tanstack/router/create-route-property-order': 'error',
-      // 'react-compiler/react-compiler': 'error',
+      'react-compiler/react-compiler': 'error',
     },
   }
 )

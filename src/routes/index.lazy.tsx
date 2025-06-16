@@ -11,7 +11,7 @@ export const Route = createLazyFileRoute('/')({
 
 function Index() {
   return (
-    <div className="p-2 sm:p-4 flex flex-col gap-6 justify-center items-center min-h-screen mt-2 sm:mt-4">
+    <div className="p-2 sm:p-4 flex flex-col gap-6 justify-center items-center mt-2 sm:mt-4">
       <AvgChar data={cleanedCoffeeData} />
       <hr className='my-4' />
       <CharRank data={cleanedCoffeeData} />
@@ -20,6 +20,5 @@ function Index() {
       <hr className='my-4' />
       <MostBags data={cleanedCoffeeData} />
     </div>
-
   )
 }

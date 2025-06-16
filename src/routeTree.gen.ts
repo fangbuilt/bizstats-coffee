@@ -16,16 +16,16 @@ import { Route as rootRoute } from './routes/__root'
 
 // Create Virtual Routes
 
-const CardsLazyImport = createFileRoute('/cards')()
+const MatricesLazyImport = createFileRoute('/matrices')()
 const IndexLazyImport = createFileRoute('/')()
 
 // Create/Update Routes
 
-const CardsLazyRoute = CardsLazyImport.update({
-  id: '/cards',
-  path: '/cards',
+const MatricesLazyRoute = MatricesLazyImport.update({
+  id: '/matrices',
+  path: '/matrices',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/cards.lazy').then((d) => d.Route))
+} as any).lazy(() => import('./routes/matrices.lazy').then((d) => d.Route))
 
 const IndexLazyRoute = IndexLazyImport.update({
   id: '/',
@@ -44,11 +44,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexLazyImport
       parentRoute: typeof rootRoute
     }
-    '/cards': {
-      id: '/cards'
-      path: '/cards'
-      fullPath: '/cards'
-      preLoaderRoute: typeof CardsLazyImport
+    '/matrices': {
+      id: '/matrices'
+      path: '/matrices'
+      fullPath: '/matrices'
+      preLoaderRoute: typeof MatricesLazyImport
       parentRoute: typeof rootRoute
     }
   }
@@ -58,37 +58,37 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
-  '/cards': typeof CardsLazyRoute
+  '/matrices': typeof MatricesLazyRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
-  '/cards': typeof CardsLazyRoute
+  '/matrices': typeof MatricesLazyRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexLazyRoute
-  '/cards': typeof CardsLazyRoute
+  '/matrices': typeof MatricesLazyRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cards'
+  fullPaths: '/' | '/matrices'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cards'
-  id: '__root__' | '/' | '/cards'
+  to: '/' | '/matrices'
+  id: '__root__' | '/' | '/matrices'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexLazyRoute: typeof IndexLazyRoute
-  CardsLazyRoute: typeof CardsLazyRoute
+  MatricesLazyRoute: typeof MatricesLazyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexLazyRoute: IndexLazyRoute,
-  CardsLazyRoute: CardsLazyRoute,
+  MatricesLazyRoute: MatricesLazyRoute,
 }
 
 export const routeTree = rootRoute
@@ -102,14 +102,14 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/cards"
+        "/matrices"
       ]
     },
     "/": {
       "filePath": "index.lazy.tsx"
     },
-    "/cards": {
-      "filePath": "cards.lazy.tsx"
+    "/matrices": {
+      "filePath": "matrices.lazy.tsx"
     }
   }
 }
