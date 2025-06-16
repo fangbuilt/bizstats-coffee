@@ -14,7 +14,7 @@ import {
   ChartOptions,
   ChartData,
   Plugin,
-} from 'chart.js'
+} from 'chart.js/auto'
 import zoomPlugin from 'chartjs-plugin-zoom'
 import datalabels from 'chartjs-plugin-datalabels'
 import 'chartjs-adapter-date-fns'
