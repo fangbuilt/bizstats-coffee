@@ -42,15 +42,13 @@ function Matrices() {
   }, [])
 
   return (
-    <div className="flex flex-col items-center gap-6 bg-gray-50 p-4">
+    <div className="mt-2 flex flex-col min-h-screen items-center justify-center gap-4 p-2">
       {/* Container width scales on screen size, full width on mobile, capped on larger */}
-      <div className="w-full max-w-xl rounded bg-white p-6 shadow">
-        <h3 className="mb-4 text-center text-xl font-semibold">
+      <div className="w-full max-w-sm rounded bg-white p-4 shadow">
+        <h3 className="mb-2 text-center text-xl font-semibold">
           Standard Deviation
         </h3>
-        <hr className="mb-6" />
-        <div className="flex flex-col gap-4">
-          <h5 className="text-center font-medium">Characteristics Score</h5>
+        <div className="flex flex-col gap-2">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
             {/* Select full width on mobile, auto on larger */}
             <select
@@ -78,11 +76,9 @@ function Matrices() {
         </div>
       </div>
 
-      <div className="w-full max-w-xl rounded bg-white p-6 shadow">
-        <h3 className="mb-4 text-center text-xl font-semibold">Correlation</h3>
-        <hr className="mb-6" />
-        <div className="flex flex-col gap-4">
-          <h5 className="text-center font-medium">Characteristics Score</h5>
+      <div className="w-full max-w-sm rounded bg-white p-4 shadow">
+        <h3 className="mb-2 text-center text-xl font-semibold">Correlation</h3>
+        <div className="flex flex-col gap-2">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
             <select
               name="scoresA"
@@ -127,11 +123,10 @@ function Matrices() {
         </div>
       </div>
 
-      <div className="w-full max-w-xl rounded bg-white p-6 shadow">
-        <h3 className="mb-4 text-center text-xl font-semibold">Correlation</h3>
-        <hr className="mb-6" />
-        <div className="flex flex-col gap-4">
-          <h5 className="text-center font-medium">Altitude : Total Score</h5>
+      <div className="w-full max-w-sm rounded bg-white p-4 shadow">
+        <h3 className="mb-2 text-center text-xl font-semibold">Correlation</h3>
+        <div className="flex flex-col gap-2">
+          <h5 className="text-center text-lg font-medium">Altitude : Total Score</h5>
           <div className="flex justify-center">
             <p className="text-lg font-semibold">{corrAltTotal}</p>
           </div>

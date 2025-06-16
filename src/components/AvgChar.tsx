@@ -7,6 +7,7 @@ import {
   toTitleCase,
 } from '../utils'
 import { ChartCanvas } from './reusable/ChartCanvas'
+import { ChartData } from 'chart.js'
 
 export default function AvgChar({ data }: { data: CorgisCoffee[] }) {
   const [mode, setMode] = useState<'total' | 'categories'>('total')
@@ -117,36 +118,33 @@ export default function AvgChar({ data }: { data: CorgisCoffee[] }) {
 
   const chartData = useMemo(() => {
     const labels = averagedScoreData.map((data) => data.Year.toString())
-
     const datasets = barKeys.map((key, index) => {
-      const color = `hsl(${(index * 35) % 360}, 70%, 60%)`
+      const color = `hsl(${(index * 36) % 360}, 70%, 60%)`
       return {
         label: String(key),
         data: averagedScoreData.map((data) => data[key as ScoreKey] ?? 0),
         backgroundColor: color,
         borderColor: color,
         borderWidth: 2,
-        type: chartType as "line" | "bar",
+        type: chartType as 'line' | 'bar',
       }
     })
-
     return {
       labels,
       datasets,
-    }
+    } as ChartData<'line' | 'bar'>
   }, [averagedScoreData, barKeys, chartType])
 
   return (
-    <div className="flex w-full max-w-6xl flex-col gap-4">
+    <>
       {/* Description Box */}
-      <div className="w-full rounded bg-white p-6 text-center text-sm shadow sm:text-base">
-        <h3>Average of Coffee Characteristics Score</h3>
+      <div className="w-full rounded bg-white p-4 text-center text-sm shadow sm:w-auto sm:text-base">
+        <h3 className='text-xl'>Average of Coffee Characteristics Score</h3>
       </div>
 
       {/* Controls Row */}
       <div className="flex flex-col flex-wrap items-stretch justify-center gap-2 sm:flex-row sm:items-center">
         <div className="flex w-full flex-col items-start gap-2 rounded bg-white p-4 shadow sm:w-auto sm:flex-row sm:items-center sm:gap-4">
-          <p>Now showing: {mode !== 'total' ? 'Categories' : 'Total'}</p>
           <button
             className="w-full rounded border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none sm:w-auto"
             onClick={toggleMode}
@@ -157,7 +155,6 @@ export default function AvgChar({ data }: { data: CorgisCoffee[] }) {
 
         {/* Country Select */}
         <div className="flex w-full flex-col items-start gap-2 rounded bg-white p-4 shadow sm:w-auto sm:flex-row sm:items-center sm:gap-4">
-          <label htmlFor="country">Filter by Country:</label>
           <select
             name="country"
             id="country"
@@ -180,7 +177,6 @@ export default function AvgChar({ data }: { data: CorgisCoffee[] }) {
         {/* Region Select (Conditional) */}
         {selectedCountry && allRegions.length > 0 && (
           <div className="flex w-full flex-col items-start gap-2 rounded bg-white p-4 shadow sm:w-auto sm:flex-row sm:items-center sm:gap-4">
-            <label htmlFor="region">Filter by Region:</label>
             <select
               name="region"
               id="region"
@@ -207,6 +203,6 @@ export default function AvgChar({ data }: { data: CorgisCoffee[] }) {
         chartType={chartType}
         stacked={mode !== 'total'} // stacked for category scores
       />
-    </div>
+    </>
   )
 }

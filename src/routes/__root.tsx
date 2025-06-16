@@ -7,12 +7,12 @@ import {
 import { ChartNoAxesCombined, LayoutDashboard, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
-  {
-    component: RootComponent,
-    notFoundComponent: NotFound,
-  }
-)
+export const Route = createRootRouteWithContext<{
+  queryClient: QueryClient
+}>()({
+  component: RootComponent,
+  notFoundComponent: NotFound,
+})
 
 function RootComponent() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
@@ -33,7 +33,7 @@ function RootComponent() {
             className={`transition-opacity duration-150 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}
           >
             {sidebarOpen && (
-              <h1 className="text-xl font-semibold text-gray-900">Dashboard</h1>
+              <h1 className="text-xl font-semibold text-gray-900">Bizstats-Coffee</h1>
             )}
           </div>
           <button
@@ -50,7 +50,7 @@ function RootComponent() {
         <div className="flex-1 space-y-1 px-2">
           <Link
             to="/"
-            className={`no-underline group flex items-center rounded-lg text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 [&.active]:bg-blue-50 [&.active]:text-blue-700 ${
+            className={`group flex items-center rounded-lg text-sm font-medium text-gray-700 no-underline transition-colors hover:bg-gray-100 [&.active]:bg-blue-50 [&.active]:text-blue-700 ${
               sidebarOpen ? 'px-3 py-2' : 'justify-center p-3'
             }`}
             title={!sidebarOpen ? 'Charts' : undefined}
@@ -69,7 +69,7 @@ function RootComponent() {
 
           <Link
             to="/matrices"
-            className={`no-underline group flex items-center rounded-lg text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 [&.active]:bg-blue-50 [&.active]:text-blue-700 ${
+            className={`group flex items-center rounded-lg text-sm font-medium text-gray-700 no-underline transition-colors hover:bg-gray-100 [&.active]:bg-blue-50 [&.active]:text-blue-700 ${
               sidebarOpen ? 'px-3 py-2' : 'justify-center p-3'
             }`}
             title={!sidebarOpen ? 'Matrices' : undefined}
@@ -99,14 +99,14 @@ function RootComponent() {
           <div className="flex justify-around">
             <Link
               to="/"
-              className="no-underline flex flex-col items-center gap-1 px-3 py-2 text-xs font-medium text-gray-600 transition-colors hover:text-blue-600 [&.active]:text-blue-600"
+              className="flex flex-col items-center gap-1 px-3 py-2 text-xs font-medium text-gray-600 no-underline transition-colors hover:text-blue-600 [&.active]:text-blue-600"
             >
               <ChartNoAxesCombined size={20} />
               Charts
             </Link>
             <Link
               to="/matrices"
-              className="no-underline flex flex-col items-center gap-1 px-3 py-2 text-xs font-medium text-gray-600 transition-colors hover:text-blue-600 [&.active]:text-blue-600"
+              className="flex flex-col items-center gap-1 px-3 py-2 text-xs font-medium text-gray-600 no-underline transition-colors hover:text-blue-600 [&.active]:text-blue-600"
             >
               <LayoutDashboard size={20} />
               Matrices
@@ -124,7 +124,7 @@ function NotFound() {
       <p className="mb-4 text-lg text-gray-600">This page could not be found</p>
       <Link
         to="/"
-        className="no-underline rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
+        className="rounded-lg bg-blue-600 px-4 py-2 text-white no-underline transition-colors hover:bg-blue-700"
       >
         Go Home
       </Link>

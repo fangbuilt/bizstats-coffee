@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { CorgisCoffee, scoreCategories } from '../utils'
 import { ChartCanvas } from './reusable/ChartCanvas'
+import { ChartData } from 'chart.js'
 
 export default function CharRank({ data }: { data: CorgisCoffee[] }) {
   const [selectedYear, setSelectedYear] = useState<number | 'all'>('all')
@@ -90,20 +91,19 @@ export default function CharRank({ data }: { data: CorgisCoffee[] }) {
           barThickness: 20,
         },
       ],
-    }
+    } as ChartData<'bar'>
   }, [topCountriesData, rankBy])
 
   return (
-    <div className="flex w-full max-w-6xl flex-col gap-6">
-      <div className="w-full rounded bg-white p-6 text-center text-sm shadow sm:text-base">
-        <h3>
+    <>
+      <div className="w-full rounded bg-white p-4 text-center text-sm shadow sm:w-auto sm:text-base">
+        <h3 className="text-xl">
           {rankBy === 'Total' ? 'Total Score Ranking' : rankBy + ' Ranking'}
         </h3>
       </div>
 
       <div className="flex flex-col flex-wrap items-stretch justify-center gap-2 sm:flex-row sm:items-center">
         <div className="flex w-full flex-col items-start gap-2 rounded bg-white p-4 shadow sm:w-auto sm:flex-row sm:items-center sm:gap-4">
-          <label htmlFor="entryThreshold">Min. Entries:</label>
           <select
             disabled={selectedYear !== 'all'}
             name="entryThreshold"
@@ -116,14 +116,15 @@ export default function CharRank({ data }: { data: CorgisCoffee[] }) {
           >
             {[1, 2, 3, 5, 10].map((value) => (
               <option key={value} value={selectedYear === 'all' ? value : 1}>
-                {selectedYear !== 'all' ? "Please select all years" : value}
+                {selectedYear !== 'all'
+                  ? 'Please select all years'
+                  : `At least ${value} entr${value > 1 ? 'ies' : 'y'}`}
               </option>
             ))}
           </select>
         </div>
 
         <div className="flex w-full flex-col items-start gap-2 rounded bg-white p-4 shadow sm:w-auto sm:flex-row sm:items-center sm:gap-4">
-          <label htmlFor="year">Filter by Year:</label>
           <select
             name="year"
             id="year"
@@ -170,6 +171,6 @@ export default function CharRank({ data }: { data: CorgisCoffee[] }) {
 
       {/* Rankings Chart */}
       <ChartCanvas data={chartData} chartType="bar" horizontal />
-    </div>
+    </>
   )
 }

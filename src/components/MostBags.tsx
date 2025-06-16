@@ -29,13 +29,13 @@ export default function MostBags({ data }: { data: CorgisCoffee[] }) {
   }, [data])
 
   return (
-    <div className="flex w-full max-w-6xl flex-col gap-4">
-      <div className="w-full rounded bg-white p-6 text-center text-sm shadow sm:text-base">
-        <h3>Most Bags Sold Owner Ranking</h3>
+    <>
+      <div className="w-full rounded bg-white p-6 text-center text-sm shadow sm:w-auto sm:text-base">
+        <h3 className='text-xl'>Most Bags Sold Owner Ranking</h3>
       </div>
-      <ol className="flex flex-col gap-4">
+      <ol className="flex flex-col flex-wrap items-stretch justify-center gap-2 sm:flex-row sm:items-center">
         {ownerRankingByBagsSold.map((d) => (
-          <li className="flex items-center gap-4 rounded bg-white p-6 shadow">
+          <li className="flex w-full flex-col items-start gap-2 rounded bg-white p-4 shadow sm:w-auto sm:flex-row sm:items-center sm:gap-4">
             <div>
               <h1>{d.rank}</h1>
             </div>
@@ -48,6 +48,6 @@ export default function MostBags({ data }: { data: CorgisCoffee[] }) {
           </li>
         ))}
       </ol>
-    </div>
+    </>
   )
 }

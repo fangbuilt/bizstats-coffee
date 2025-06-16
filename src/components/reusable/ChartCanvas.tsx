@@ -81,7 +81,7 @@ export function ChartCanvas<TType extends keyof ChartTypeRegistry>({
           pinch: {
             enabled: true,
           },
-          mode: horizontal ? 'y' :'x',
+          mode: horizontal ? 'y' : 'x',
         },
         pan: {
           enabled: true,
@@ -109,7 +109,7 @@ export function ChartCanvas<TType extends keyof ChartTypeRegistry>({
   }
 
   return (
-    <div className="relative h-[500px] w-full rounded bg-white p-6 shadow">
+    <div className="h-[500px] w-full max-w-xl rounded bg-white p-6 shadow">
       <Chart
         type={chartType}
         data={data}
