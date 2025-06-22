@@ -123,3 +123,41 @@ export const cleanedCoffeeData = removeOutliers(
   rawCoffeeData,
   coffeeDataOutliers
 )
+
+// counting stars
+
+console.log({
+  rawLength: rawCoffeeData.length,
+  outliersLength: coffeeDataOutliers.length,
+  cleanedLength: cleanedCoffeeData.length,
+})
+
+function groupByCountryWithCount(data: CorgisCoffee[]) {
+  return data.reduce(
+    (acc, entry) => {
+      const country = entry.Location.Country
+      acc[country] = (acc[country] || 0) + 1
+      return acc
+    },
+    {} as Record<string, number>
+  )
+}
+
+const counts = groupByCountryWithCount(cleanedCoffeeData)
+console.log('Country entry counts:', counts)
+
+for (const n of [1, 2, 3, 5, 10, 20, 50, 100]) {
+  const validCountries = new Set(
+    Object.entries(counts)
+      .filter(([_, count]) => count >= n)
+      .map(([country]) => country)
+  )
+
+  const filteredEntries = cleanedCoffeeData.filter((entry) =>
+    validCountries.has(entry.Location.Country)
+  )
+
+  console.log(
+    `n ≥ ${n} → Countries: ${validCountries.size}, Entries: ${filteredEntries.length}`
+  )
+}

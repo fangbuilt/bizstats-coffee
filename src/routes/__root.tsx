@@ -4,7 +4,13 @@ import {
   Link,
   Outlet,
 } from '@tanstack/react-router'
-import { ChartNoAxesCombined, LayoutDashboard, Menu, X } from 'lucide-react'
+import {
+  ChartNoAxesCombined,
+  LayoutDashboard,
+  Menu,
+  Table2,
+  X,
+} from 'lucide-react'
 import { useState } from 'react'
 
 export const Route = createRootRouteWithContext<{
@@ -33,7 +39,9 @@ function RootComponent() {
             className={`transition-opacity duration-150 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}
           >
             {sidebarOpen && (
-              <h1 className="text-xl font-semibold text-gray-900">Bizstats-Coffee</h1>
+              <h1 className="text-xl font-semibold text-gray-900">
+                Bizstats-Coffee
+              </h1>
             )}
           </div>
           <button
@@ -85,6 +93,25 @@ function RootComponent() {
               Matrices
             </span>
           </Link>
+
+          <Link
+            to="/documentation"
+            className={`group flex items-center rounded-lg text-sm font-medium text-gray-700 no-underline transition-colors hover:bg-gray-100 [&.active]:bg-blue-50 [&.active]:text-blue-700 ${
+              sidebarOpen ? 'px-3 py-2' : 'justify-center p-3'
+            }`}
+            title={!sidebarOpen ? 'Documentation' : undefined}
+          >
+            <Table2 size={20} className="flex-shrink-0" />
+            <span
+              className={`ml-3 transition-all duration-150 ${
+                sidebarOpen
+                  ? 'translate-x-0 opacity-100'
+                  : 'absolute -translate-x-2 opacity-0'
+              }`}
+            >
+              Documentation
+            </span>
+          </Link>
         </div>
       </nav>
 
@@ -110,6 +137,13 @@ function RootComponent() {
             >
               <LayoutDashboard size={20} />
               Matrices
+            </Link>
+            <Link
+              to="/documentation"
+              className="flex flex-col items-center gap-1 px-3 py-2 text-xs font-medium text-gray-600 no-underline transition-colors hover:text-blue-600 [&.active]:text-blue-600"
+            >
+              <Table2 size={20} />
+              Docs
             </Link>
           </div>
         </nav>
