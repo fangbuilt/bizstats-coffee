@@ -49,7 +49,7 @@ function removeCoffeeOutliers(
   if (data.length === 0) return data
 
   // Use first record as template for required structure
-  const template = data[0]
+  // const template = data[0]
 
   // Helper function to check if record has complete structure like template
   const hasCompleteStructure = (item: CoffeeData): boolean => {
@@ -204,10 +204,10 @@ export const cleanCoffeeData = removeCoffeeOutliers(rawCoffeeData, {
 console.log('foo', rawCoffeeData.length)
 console.log('bar', cleanCoffeeData.length)
 
-const extraStrictCoffee = removeCoffeeOutliers(rawCoffeeData, {
-  iqrMultiplier: 1.0,
-}) // Even stricter bounds - perfect for curating premium coffee data
+// const extraStrictCoffee = removeCoffeeOutliers(rawCoffeeData, {
+//   iqrMultiplier: 1.0,
+// }) // Even stricter bounds - perfect for curating premium coffee data
 
-const ultraStrictCoffee = removeCoffeeOutliers(rawCoffeeData, {
-  iqrMultiplier: 0.8,
-}) // Ultra-strict for competition-grade coffee analysis
+// const ultraStrictCoffee = removeCoffeeOutliers(rawCoffeeData, {
+//   iqrMultiplier: 0.8,
+// }) // Ultra-strict for competition-grade coffee analysis
