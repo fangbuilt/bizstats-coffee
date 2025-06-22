@@ -46,7 +46,7 @@ function Documentation() {
         onClick={() => toggleSection(id)}
         className="flex w-full items-center justify-between py-4 text-left hover:bg-gray-50 bg-white"
       >
-        <h2 className="mb-2 text-xl font-semibold">{title}</h2>
+        <h2 className="text-xl font-semibold">{title}</h2>
         {expandedSections.has(id) ? (
           <ChevronDown className="h-5 w-5 text-gray-500" />
         ) : (
